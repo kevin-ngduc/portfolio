@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Café Koem · Kevin Nguyen</title>
+<link rel="canonical" href="https://kevin-nguyen.me/cafe-koem.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kevin Nguyen – Portfolio">
+<meta property="og:title" content="Café Koem · Kevin Nguyen">
+<meta property="og:description" content="Construire une image chaleureuse et reconnaissable pour le coffee shop du groupe Fusio, avec des contenus produits réguliers et un rendez-vous hebdomadaire : le Pink Day.">
+<meta property="og:url" content="https://kevin-nguyen.me/cafe-koem.html">
+<meta property="og:image" content="https://kevin-nguyen.me/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Kevin Nguyen, Assistant Marketing en alternance">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Duc Kien (Kevin) Nguyen">
+
+<meta name="description" content="Construire une image chaleureuse et reconnaissable pour le coffee shop du groupe Fusio, avec des contenus produits réguliers et un rendez-vous hebdomadaire : le Pink Day.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: case-study reading page — ivory paper, ink type, project tint; sticky section labels on the left, content on the right.
+   Single light look by choice (the home page is the dark one). */
+:root{
+  --bg:#F5F0E6; --paper:#FBF8F2; --ink:#16130E; --muted:#6B6355; --line:#E1D8C6; --gold:#9C7A2E;
+  --tint:#9C7A2E; --tint-soft:#F1E6CC;
+  --f-poster:"Anton","Impact","Arial Narrow",sans-serif;
+  --f-serif:"Instrument Serif","Times New Roman",Georgia,serif;
+  --f-body:"Manrope","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --max:1180px; --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--tint);outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4{margin:0;font-weight:400;text-wrap:balance}
+p{margin:0}
+[hidden]{display:none!important}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.serif{font-family:var(--f-serif);font-style:italic;text-transform:none;letter-spacing:0}
+.progress{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:3px;z-index:70;background:var(--tint);transform-origin:0 50%;transform:scaleX(var(--sp,0))}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:.9rem;white-space:nowrap}
+.back b{font-family:var(--f-poster);font-weight:400;font-size:1.15rem;letter-spacing:.03em}
+.navlinks{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none}
+.navlinks a{text-decoration:none;font-size:.82rem;font-weight:600;color:var(--muted);padding:6px 11px;border-radius:999px;white-space:nowrap}
+.navlinks a:hover{color:var(--ink);background:var(--paper)}
+.navlinks a.on{color:var(--ink);background:var(--tint-soft)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:700;font-size:.9rem;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:var(--bg);white-space:nowrap;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+@media (max-width:860px){.navlinks{display:none}}
+
+/* header */
+.c-hero{padding-block:64px 40px}
+.kicker{display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:30px;height:2px;background:var(--tint)}
+.kicker .mono{color:var(--tint)}
+.c-title{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(3.4rem,10vw,8.6rem);line-height:.88;margin-top:18px}
+.c-title .serif{display:block;color:var(--tint);font-size:.62em;line-height:1;margin-top:.12em}
+.c-lede{max-width:58ch;font-size:clamp(1.08rem,1.6vw,1.28rem);margin-top:26px;line-height:1.55}
+.fiche{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-top:1px solid var(--ink);margin-top:44px}
+.fiche div{padding:14px 18px 14px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
+.fiche dt{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fiche dd{margin:0;font-weight:600;font-size:.95rem;line-height:1.45}
+.cover{margin-top:40px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--paper);cursor:zoom-in;padding:0;display:block;width:100%}
+.cover img{width:100%;max-height:78vh;object-fit:cover}
+
+/* sections with sticky label */
+.c-sec{display:grid;grid-template-columns:240px 1fr;gap:40px;padding-block:64px;border-top:1px solid var(--line)}
+.c-sec > *{min-width:0}
+.c-label{position:sticky;top:90px;align-self:start;display:flex;flex-direction:column;gap:6px}
+.c-label .no{font-family:var(--f-poster);font-size:2.6rem;line-height:1;color:var(--tint)}
+.c-label h2{font-family:var(--f-body);font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
+.c-body{display:flex;flex-direction:column;gap:18px;max-width:72ch}
+.c-body p{font-size:1.05rem}
+.c-body .intro{font-weight:700}
+.goals{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:g}
+.goals li{counter-increment:g;display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:baseline;padding:16px 18px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
+.goals li::before{content:"0" counter(g);font-family:var(--f-mono);font-size:.8rem;color:var(--tint);font-weight:500}
+.bul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.bul li{position:relative;padding-left:26px}
+.bul li::before{content:"";position:absolute;left:0;top:.62em;width:12px;height:2px;background:var(--tint)}
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:none}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.step .mono{color:var(--tint)}
+.step h3{font-family:var(--f-body);font-weight:800;font-size:1.08rem}
+.step p{font-size:.97rem;color:var(--ink);opacity:.86}
+@media (max-width:860px){.c-sec{grid-template-columns:1fr;gap:18px;padding-block:48px}.c-label{position:static;flex-direction:row;align-items:baseline;gap:12px}.c-label .no{font-size:1.8rem}.steps{grid-template-columns:1fr}}
+
+/* realisations */
+.grp{padding-block:56px;border-top:1px solid var(--line)}
+.grp-head{display:grid;grid-template-columns:1fr 1.1fr;gap:30px;align-items:end;margin-bottom:26px}
+.grp-head h3{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.05}
+.grp-head p{color:var(--muted);font-size:1rem}
+@media (max-width:860px){.grp-head{grid-template-columns:1fr;gap:10px}}
+.gal{columns:3 260px;column-gap:18px}
+.fig{break-inside:avoid;margin:0 0 22px;display:flex;flex-direction:column;gap:9px}
+.tile{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper);cursor:zoom-in;position:relative}
+.tile img{width:100%;transition:transform .8s var(--ease)}
+.tile:hover img{transform:scale(1.035)}
+.fig figcaption{font-size:.88rem;line-height:1.45;color:var(--muted);padding-right:6px}
+.fig figcaption b{color:var(--ink);font-weight:700}
+.more{display:flex;justify-content:center;margin-top:6px}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.strip .fig{flex:none;width:300px;scroll-snap-align:start;margin:0}
+.strip .tile img{height:400px;width:100%;object-fit:cover;object-position:top}
+@media (max-width:620px){.gal{columns:1}.strip .fig{width:240px}.strip .tile img{height:320px}}
+
+/* results */
+.res{background:var(--ink);color:#F3EEE4;border-radius:24px;padding:48px;margin-block:64px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.res .mono{color:#A49C8D}
+.res h2{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.4rem,5vw,3.8rem);line-height:.95;margin-top:10px}
+.res h2 .serif{color:var(--tint-soft)}
+.res-kpis{display:grid;gap:12px}
+.res-kpi{border:1px solid #302B22;border-radius:14px;padding:16px 18px;display:flex;align-items:baseline;gap:14px}
+.res-kpi b{font-family:var(--f-poster);font-weight:400;font-size:clamp(2rem,4vw,2.8rem);line-height:1;color:var(--tint-soft);white-space:nowrap}
+.res-kpi span{font-size:.92rem;color:#CFC7B8}
+.res-text{display:flex;flex-direction:column;gap:14px;margin-top:20px;color:#E6E0D4}
+.res-note{font-size:.8rem;color:#A49C8D}
+@media (max-width:860px){.res{grid-template-columns:1fr;padding:30px 22px;gap:24px}}
+.learn{padding-block:30px 70px}
+.learn blockquote{margin:0;font-family:var(--f-serif);font-style:italic;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.3;max-width:34ch}
+.learn blockquote::before{content:"« ";color:var(--tint)}
+.learn blockquote::after{content:" »";color:var(--tint)}
+
+/* freelance */
+.client{padding-block:60px;border-top:1px solid var(--line);scroll-margin-top:70px}
+.client-head{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-bottom:28px}
+.client-head h2{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.6rem);line-height:.95;margin-top:10px}
+.client-head h2 .serif{display:block;color:var(--tint);font-size:.62em}
+.client-body{display:flex;flex-direction:column;gap:14px}
+.feedback{border-left:3px solid var(--tint);padding:12px 18px;background:var(--paper);border-radius:0 12px 12px 0;font-size:.98rem}
+.feedback .mono{display:block;margin-bottom:4px}
+@media (max-width:860px){.client-head{grid-template-columns:1fr;gap:16px}}
+
+/* next */
+.next{display:block;text-decoration:none;background:var(--ink);color:#F3EEE4;border-radius:24px;padding:40px;margin-block:30px 50px;position:relative;overflow:hidden}
+.next .mono{color:#A49C8D}
+.next h2{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.6rem,7vw,5.4rem);line-height:.9;margin-top:12px;transition:transform .5s var(--ease)}
+.next h2 .serif{color:var(--ntint,#D9B36C)}
+.next:hover h2{transform:translateX(12px)}
+.next .arrow{position:absolute;right:40px;top:50%;translate:0 -50%;font-size:3rem;transition:transform .5s var(--ease)}
+.next:hover .arrow{transform:translateX(8px)}
+@media (max-width:620px){.next{padding:28px 22px}.next .arrow{display:none}}
+footer{padding-block:26px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center}
+
+@media (prefers-reduced-motion: no-preference){
+  .c-hero > *{animation:rise .9s var(--ease) both}
+  .c-hero > :nth-child(2){animation-delay:.08s}.c-hero > :nth-child(3){animation-delay:.16s}.c-hero > :nth-child(4){animation-delay:.24s}.c-hero > :nth-child(5){animation-delay:.32s}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}}
+  [data-a]{transition:opacity .9s var(--ease),transform .9s var(--ease)}
+  [data-a].pending{opacity:0;transform:translateY(50px)}
+}
+
+.lb{position:fixed;inset:0;z-index:100;background:#0B0A08;height:100vh;height:100dvh;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;gap:12px;
+  padding:calc(14px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));animation:fade .25s}
+.lb[hidden]{display:none}
+.lb .mono{color:#A49C8D}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.lb-stage{position:relative;display:flex;align-items:center;justify-content:center;min-height:0;overflow:hidden}
+.lb-stage img{max-height:calc(100vh - 170px);max-height:calc(100dvh - 170px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));max-width:calc(100% - 120px);width:auto;height:auto;object-fit:contain;border-radius:8px;animation:zoomin .35s cubic-bezier(.2,.7,.2,1)}
+.lb-cap{text-align:center;color:#D8D1C3;font-size:.92rem;max-width:70ch;margin:0 auto}
+.lb-btn{background:#17150F;color:#F3EEE4;border:1px solid #302B22;border-radius:999px;padding:9px 16px;font-weight:700;cursor:pointer;font-family:inherit}
+.lb-nav{position:absolute;top:50%;translate:0 -50%;width:48px;height:48px;border-radius:50%;background:rgba(23,21,15,.85);border:1px solid #302B22;color:#F3EEE4;font-size:1.3rem;cursor:pointer}
+.lb-nav.prev{left:0}.lb-nav.next{right:0}
+@media (max-width:620px){.lb-stage img{max-width:100%}.lb-nav{top:auto;bottom:6px;translate:none;width:42px;height:42px}}
+@keyframes fade{from{opacity:0}}
+@keyframes zoomin{from{opacity:0;transform:scale(.95)}}
+</style>
+<style>:root{--tint:#B42335;--tint-soft:#F5DDDF}</style>
+</head>
+<body>
+<span id="top"></span><div class="progress" aria-hidden="true"></div>
+<nav aria-label="Navigation"><div class="wrap">
+  <a class="back" href="index.html#projets" data-back>← <b>KEVIN NGUYEN</b></a>
+  <div class="navlinks"><a href="sushi-2-go.html#top">Sushi 2 Go</a><a href="hem-8.html#top">Hẻm 8</a><a href="cafe-koem.html#top" class="on">Café Koem</a><a href="duckee.html#top">Duckee</a><a href="freelance.html#top">Freelance</a></div>
+  <a class="btn" href="index.html#contact">Me contacter</a>
+</div></nav>
+<main>
+<header class="wrap c-hero">
+  <div class="kicker"><span class="mono">Projet 03 · Coffee shop · Hanoï · 2022</span></div>
+  <h1 class="c-title">Café Koem<span class="serif">une marque qui donne soif.</span></h1>
+  <p class="c-lede">Construire une image chaleureuse et reconnaissable pour le coffee shop du groupe Fusio, avec des contenus produits réguliers et un rendez-vous hebdomadaire : le Pink Day.</p>
+  <dl class="fiche"><div><dt>Groupe</dt><dd>Fusio Corporation, voisin des restaurants Hẻm 8</dd></div><div><dt>Mon rôle</dt><dd>Chef de service marketing</dd></div><div><dt>Période</dt><dd>2022</dd></div><div><dt>Canaux</dt><dd>Facebook, Instagram, affiches et standee en boutique</dd></div><div><dt>Outils</dt><dd>Photoshop, Illustrator, Canva</dd></div><div><dt>Livrables</dt><dd>Série photo « Fruit tea », Pink Day, affiches, temps forts, recrutement</dd></div></dl>
+  <div data-set><button class="cover tile" type="button" data-cap="Thé raisin : le visuel principal de la série, avec la phrase « chinh phục mọi tín đồ sành uống »." aria-label="Agrandir l’image de couverture"><img src="img/ko-fruit-2.webp" alt="Thé raisin : le visuel principal de la série, avec la phrase « chinh phục mọi tín đồ sành uống »." width="1080" height="1080" decoding="async"></button></div>
+</header><section class="wrap c-sec" data-a><div class="c-label"><span class="no">01</span><h2>Contexte</h2></div><div class="c-body"><p>Café Koem est le coffee shop du groupe Fusio. Dans le marché du café à Hanoï, très concurrentiel, la marque publiait de façon irrégulière et sans signature visuelle claire.</p><p>L’enjeu : être reconnu au premier coup d’œil dans le fil d’actualité, et donner aux clients une habitude de visite.</p></div></section><section class="wrap c-sec" data-a><div class="c-label"><span class="no">02</span><h2>Objectifs</h2></div><div class="c-body"><ol class="goals"><li>Donner une signature visuelle reconnaissable à toutes les publications.</li><li>Créer une habitude de visite en milieu de semaine.</li><li>Faire vivre la marque à chaque temps fort de l’année.</li></ol></div></section><section class="wrap c-sec" data-a><div class="c-label"><span class="no">03</span><h2>Mon rôle</h2></div><div class="c-body"><p class="intro">J’ai repensé la communication du coffee shop, de la photo produit jusqu’au point de vente.</p><ul class="bul"><li>Direction artistique des photos produits et création de la série « Fruit tea ».</li><li>Création du concept Pink Day : chaque mercredi, tous les thés à 38 000 VND.</li><li>Déclinaison du Pink Day en publication, en affiche A5 et en standee.</li><li>Visuels pour les temps forts : Journée de la femme, fête des pères.</li><li>Affiches des cafés signatures et visuels de recrutement.</li></ul></div></section><section class="wrap c-sec" data-a><div class="c-label"><span class="no">04</span><h2>Démarche</h2></div><div class="c-body"><div class="steps"><div class="step"><span class="mono">Étape 1</span><h3>Fixer un cadre</h3><p>Un cadrage identique pour chaque boisson : le verre au centre, un fond de bois, un cartouche vert foncé avec une phrase courte.</p></div><div class="step"><span class="mono">Étape 2</span><h3>Créer un rituel</h3><p>Le Pink Day, un prix unique chaque mercredi, pour remplir le milieu de semaine.</p></div><div class="step"><span class="mono">Étape 3</span><h3>Décliner partout</h3><p>Le même visuel en publication, en affiche et en standee à l’entrée de la boutique.</p></div><div class="step"><span class="mono">Étape 4</span><h3>Suivre</h3><p>Observer l’évolution des interactions mois après mois.</p></div></div></div></section><section class="wrap" id="realisations" style="padding-top:20px"><div class="c-sec" style="padding-bottom:0"><div class="c-label"><span class="no">05</span><h2>Réalisations</h2></div><div class="c-body"><p>Chaque visuel est présenté avec son contexte. Cliquez sur une image pour l’agrandir, puis utilisez les flèches pour parcourir la série.</p></div></div><div class="grp" data-a><div class="grp-head"><h3>La série « Fruit tea »</h3><p>Une série photo produit au même cadrage : le verre au centre, un fond de bois chaud, un cartouche avec une phrase courte et le logo Koem. Résultat : un fil Instagram reconnaissable au premier coup d’œil.</p></div><div class="gal" id="g-cafe-koem-0" data-set><figure class="fig"><button class="tile" type="button" data-cap="Thé raisin : le visuel principal de la série, avec la phrase « chinh phục mọi tín đồ sành uống »." aria-label="Agrandir : Thé raisin : le visuel principal de la série, avec la phrase « chinh phục mọi tín đồ sành uống »."><img src="img/ko-fruit-2.webp" alt="Thé raisin : le visuel principal de la série, avec la phrase « chinh phục mọi tín đồ sành uống »." width="1080" height="1080" loading="lazy" decoding="async"></button><figcaption>Thé raisin : le visuel principal de la série, avec la phrase « chinh phục mọi tín đồ sành uống ».</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Thé litchi macchiato." aria-label="Agrandir : Thé litchi macchiato."><img src="img/ko-fruit-0.webp" alt="Thé litchi macchiato." width="1080" height="1080" loading="lazy" decoding="async"></button><figcaption>Thé litchi macchiato.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Thé mangue et fruit de la passion." aria-label="Agrandir : Thé mangue et fruit de la passion."><img src="img/ko-fruit-1.webp" alt="Thé mangue et fruit de la passion." width="1080" height="1080" loading="lazy" decoding="async"></button><figcaption>Thé mangue et fruit de la passion.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Thé raisin, déclinaison avec une illustration de fruits." aria-label="Agrandir : Thé raisin, déclinaison avec une illustration de fruits."><img src="img/ko-fruit-3.webp" alt="Thé raisin, déclinaison avec une illustration de fruits." width="1080" height="1080" loading="lazy" decoding="async"></button><figcaption>Thé raisin, déclinaison avec une illustration de fruits.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Thé raisin, déclinaison en plein cadre." aria-label="Agrandir : Thé raisin, déclinaison en plein cadre."><img src="img/ko-fruit-4.webp" alt="Thé raisin, déclinaison en plein cadre." width="1080" height="1080" loading="lazy" decoding="async"></button><figcaption>Thé raisin, déclinaison en plein cadre.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Thé ananas kiwi, pour annoncer l’arrivée de l’été." aria-label="Agrandir : Thé ananas kiwi, pour annoncer l’arrivée de l’été."><img src="img/ko-fruit-5.webp" alt="Thé ananas kiwi, pour annoncer l’arrivée de l’été." width="1080" height="1080" loading="lazy" decoding="async"></button><figcaption>Thé ananas kiwi, pour annoncer l’arrivée de l’été.</figcaption></figure></div></div><div class="grp" data-a><div class="grp-head"><h3>Le Pink Day, chaque mercredi</h3><p>Un prix unique, 38 000 VND pour tous les thés le mercredi. Le même visuel décliné en publication, en affiche A5 et en standee à l’entrée.</p></div><div class="gal" id="g-cafe-koem-1" data-set><figure class="fig"><button class="tile" type="button" data-cap="Affiche A5 du Pink Day : « Thứ 4 hàng tuần, đồng giá các loại trà chỉ 38K »." aria-label="Agrandir : Affiche A5 du Pink Day : « Thứ 4 hàng tuần, đồng giá các loại trà chỉ 38K »."><img src="img/ko-pinkday.webp" alt="Affiche A5 du Pink Day : « Thứ 4 hàng tuần, đồng giá các loại trà chỉ 38K »." width="987" height="1400" loading="lazy" decoding="async"></button><figcaption>Affiche A5 du Pink Day : « Thứ 4 hàng tuần, đồng giá các loại trà chỉ 38K ».</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Standee Pink Day placé à l’entrée de la boutique." aria-label="Agrandir : Standee Pink Day placé à l’entrée de la boutique."><img src="img/ko-standee.webp" alt="Standee Pink Day placé à l’entrée de la boutique." width="525" height="1400" loading="lazy" decoding="async"></button><figcaption>Standee Pink Day placé à l’entrée de la boutique.</figcaption></figure></div></div><div class="grp" data-a><div class="grp-head"><h3>Temps forts et cafés signatures</h3><p>Des visuels pour chaque moment de l’année, et des affiches pour mettre en avant les cafés de la maison.</p></div><div class="gal" id="g-cafe-koem-2" data-set><figure class="fig"><button class="tile" type="button" data-cap="Journée de la femme : « Hãy trân trọng người phụ nữ bên cạnh bạn »." aria-label="Agrandir : Journée de la femme : « Hãy trân trọng người phụ nữ bên cạnh bạn »."><img src="img/ko-women.webp" alt="Journée de la femme : « Hãy trân trọng người phụ nữ bên cạnh bạn »." width="940" height="788" loading="lazy" decoding="async"></button><figcaption>Journée de la femme : « Hãy trân trọng người phụ nữ bên cạnh bạn ».</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Fête des pères : « Ba ơi, ba rất tuyệt vời ! »" aria-label="Agrandir : Fête des pères : « Ba ơi, ba rất tuyệt vời ! »"><img src="img/ko-father.webp" alt="Fête des pères : « Ba ơi, ba rất tuyệt vời ! »" width="1080" height="1080" loading="lazy" decoding="async"></button><figcaption>Fête des pères : « Ba ơi, ba rất tuyệt vời ! »</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Affiche boissons et viennoiseries." aria-label="Agrandir : Affiche boissons et viennoiseries."><img src="img/ko-poster1.webp" alt="Affiche boissons et viennoiseries." width="1050" height="1400" loading="lazy" decoding="async"></button><figcaption>Affiche boissons et viennoiseries.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Affiche des cafés signatures : caramel macchiato, matcha." aria-label="Agrandir : Affiche des cafés signatures : caramel macchiato, matcha."><img src="img/ko-postercf.webp" alt="Affiche des cafés signatures : caramel macchiato, matcha." width="1050" height="1400" loading="lazy" decoding="async"></button><figcaption>Affiche des cafés signatures : caramel macchiato, matcha.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Coffee time » : un café et un croissant, le moment de la pause." aria-label="Agrandir : « Coffee time » : un café et un croissant, le moment de la pause."><img src="img/ko-coffee.webp" alt="« Coffee time » : un café et un croissant, le moment de la pause." width="1080" height="1080" loading="lazy" decoding="async"></button><figcaption>« Coffee time » : un café et un croissant, le moment de la pause.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« It’s coffee o’clock » : le latte art de la maison." aria-label="Agrandir : « It’s coffee o’clock » : le latte art de la maison."><img src="img/ko-coffee2.webp" alt="« It’s coffee o’clock » : le latte art de la maison." width="1080" height="1080" loading="lazy" decoding="async"></button><figcaption>« It’s coffee o’clock » : le latte art de la maison.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Đưa KOEM đi muôn nơi » : emporter Koem partout avec soi." aria-label="Agrandir : « Đưa KOEM đi muôn nơi » : emporter Koem partout avec soi."><img src="img/ko-anywhere.webp" alt="« Đưa KOEM đi muôn nơi » : emporter Koem partout avec soi." width="1080" height="1080" loading="lazy" decoding="async"></button><figcaption>« Đưa KOEM đi muôn nơi » : emporter Koem partout avec soi.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Affiche de recrutement pour la boutique." aria-label="Agrandir : Affiche de recrutement pour la boutique."><img src="img/ko-recrut.webp" alt="Affiche de recrutement pour la boutique." width="940" height="788" loading="lazy" decoding="async"></button><figcaption>Affiche de recrutement pour la boutique.</figcaption></figure></div></div></section><section class="wrap"><div class="res" data-a>
+  <div><p class="mono">06 · Résultats</p><h2>Ce que le projet <span class="serif">a changé.</span></h2><div class="res-text"><p>Les interactions sur les réseaux sociaux ont progressé de 5 à 10 % chaque mois.</p><p>Le Pink Day a reçu un bon accueil dès ses premières semaines et a donné aux clients une raison simple de revenir en milieu de semaine.</p></div></div>
+  <div class="res-kpis"><div class="res-kpi"><b>+5 à 10 %</b><span>d’interactions chaque mois</span></div><div class="res-kpi"><b>38K</b><span>tous les thés le mercredi</span></div><div class="res-kpi"><b>3</b><span>formats pour le Pink Day</span></div></div>
+</div></section>
+<section class="wrap learn" data-a><p class="mono" style="margin-bottom:14px">07 · Ce que j’ai appris</p><blockquote>Une marque se reconnaît à sa constance : même cadrage, mêmes couleurs, même ton. Le Pink Day m’a montré qu’une offre simple, répétée chaque semaine, est facile à comprendre et à retenir pour le client.</blockquote></section><section class="wrap"><a class="next" href="duckee.html#top" style="--ntint:#F6DDEA"><p class="mono">Projet suivant · 04</p><h2>Duckee <span class="serif">mon premier business.</span></h2><span class="arrow" aria-hidden="true">→</span></a></section>
+</main>
+<footer><div class="wrap"><p class="mono">Duc Kien (Kevin) Nguyen · Portfolio 2026</p><a class="btn ghost" href="index.html#projets" data-back>← Tous les projets</a></div></footer>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Visuel agrandi">
+  <div class="lb-top"><span class="mono" id="lb-n"></span><button type="button" class="lb-btn" id="lb-close">Fermer ✕</button></div>
+  <div class="lb-stage"><img id="lb-img" alt=""><button type="button" class="lb-nav prev" id="lb-prev" aria-label="Visuel précédent">←</button><button type="button" class="lb-nav next" id="lb-next" aria-label="Visuel suivant">→</button></div>
+  <p class="lb-cap" id="lb-cap"></p>
+</div>
+
+<script>
+(function(){
+  try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(err){}
+  function toTop(){if(!location.hash||location.hash==='#top')window.scrollTo(0,0)}
+  toTop();addEventListener('pageshow',toTop);addEventListener('load',toTop);
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,root=document.documentElement;
+  if(!reduce && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('pending');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:0.02});
+    document.querySelectorAll('[data-a]').forEach(function(el){if(el.getBoundingClientRect().top>innerHeight*0.92){el.classList.add('pending');io.observe(el)}});
+  }
+  addEventListener('scroll',function(){var m=root.scrollHeight-innerHeight;root.style.setProperty('--sp',m>0?scrollY/m:0)},{passive:true});
+  document.querySelectorAll('.more button').forEach(function(b){b.addEventListener('click',function(){
+    document.getElementById(b.dataset.gal).querySelectorAll('[hidden]').forEach(function(t){t.hidden=false});b.parentNode.remove();})});
+  var lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-cap'),ln=document.getElementById('lb-n'),set=[],cur=0,last=null;
+  function show(i){cur=(i+set.length)%set.length;var it=set[cur];li.src=it.src;li.alt=it.cap;lc.textContent=it.cap;ln.textContent=(cur+1)+' / '+set.length;li.style.animation='none';void li.offsetWidth;li.style.animation=''}
+  function open(items,i,from){set=items;last=from;lb.hidden=false;root.style.overflow='hidden';show(i);document.getElementById('lb-close').focus()}
+  function close(){lb.hidden=true;root.style.overflow='';li.removeAttribute('src');if(last)last.focus()}
+  document.querySelectorAll('.tile').forEach(function(t){t.addEventListener('click',function(){
+    var box=t.closest('[data-set]');var tiles=[].slice.call(box.querySelectorAll('.tile'));
+    open(tiles.map(function(x){var im=x.querySelector('img');return{src:im.getAttribute('src'),cap:x.dataset.cap}}),tiles.indexOf(t),t)})});
+  document.getElementById('lb-close').addEventListener('click',close);
+  document.getElementById('lb-prev').addEventListener('click',function(){show(cur-1)});
+  document.getElementById('lb-next').addEventListener('click',function(){show(cur+1)});
+  lb.addEventListener('click',function(x){if(x.target===lb||x.target.classList.contains('lb-stage'))close()});
+  addEventListener('keydown',function(x){if(lb.hidden)return;if(x.key==='Escape')close();if(x.key==='ArrowLeft')show(cur-1);if(x.key==='ArrowRight')show(cur+1)});
+  var sx=null;lb.addEventListener('touchstart',function(x){sx=x.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(x){if(sx===null)return;var d=x.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(cur+(d<0?1:-1));sx=null});
+  // back to portfolio: prefer history when coming from it
+  document.querySelectorAll('[data-back]').forEach(function(a){a.addEventListener('click',function(x){
+    try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){x.preventDefault();history.back()}}catch(err){}
+  })});
+})();
+</script>
+</body>
+</html>

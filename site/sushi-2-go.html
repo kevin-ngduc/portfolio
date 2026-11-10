@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sushi 2 Go · Kevin Nguyen</title>
+<link rel="canonical" href="https://kevin-nguyen.me/sushi-2-go.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kevin Nguyen – Portfolio">
+<meta property="og:title" content="Sushi 2 Go · Kevin Nguyen">
+<meta property="og:description" content="Créer de A à Z la marque d’un restaurant de sushis à Nantes pour la start-up franco-vietnamienne Vietinnovation : du choix du nom jusqu’au jour de l’ouverture, le 1er juin 2025.">
+<meta property="og:url" content="https://kevin-nguyen.me/sushi-2-go.html">
+<meta property="og:image" content="https://kevin-nguyen.me/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Kevin Nguyen, Assistant Marketing en alternance">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Duc Kien (Kevin) Nguyen">
+
+<meta name="description" content="Créer de A à Z la marque d’un restaurant de sushis à Nantes pour la start-up franco-vietnamienne Vietinnovation : du choix du nom jusqu’au jour de l’ouverture, le 1er juin 2025.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: case-study reading page — ivory paper, ink type, project tint; sticky section labels on the left, content on the right.
+   Single light look by choice (the home page is the dark one). */
+:root{
+  --bg:#F5F0E6; --paper:#FBF8F2; --ink:#16130E; --muted:#6B6355; --line:#E1D8C6; --gold:#9C7A2E;
+  --tint:#9C7A2E; --tint-soft:#F1E6CC;
+  --f-poster:"Anton","Impact","Arial Narrow",sans-serif;
+  --f-serif:"Instrument Serif","Times New Roman",Georgia,serif;
+  --f-body:"Manrope","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --max:1180px; --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--tint);outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4{margin:0;font-weight:400;text-wrap:balance}
+p{margin:0}
+[hidden]{display:none!important}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.serif{font-family:var(--f-serif);font-style:italic;text-transform:none;letter-spacing:0}
+.progress{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:3px;z-index:70;background:var(--tint);transform-origin:0 50%;transform:scaleX(var(--sp,0))}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:.9rem;white-space:nowrap}
+.back b{font-family:var(--f-poster);font-weight:400;font-size:1.15rem;letter-spacing:.03em}
+.navlinks{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none}
+.navlinks a{text-decoration:none;font-size:.82rem;font-weight:600;color:var(--muted);padding:6px 11px;border-radius:999px;white-space:nowrap}
+.navlinks a:hover{color:var(--ink);background:var(--paper)}
+.navlinks a.on{color:var(--ink);background:var(--tint-soft)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:700;font-size:.9rem;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:var(--bg);white-space:nowrap;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+@media (max-width:860px){.navlinks{display:none}}
+
+/* header */
+.c-hero{padding-block:64px 40px}
+.kicker{display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:30px;height:2px;background:var(--tint)}
+.kicker .mono{color:var(--tint)}
+.c-title{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(3.4rem,10vw,8.6rem);line-height:.88;margin-top:18px}
+.c-title .serif{display:block;color:var(--tint);font-size:.62em;line-height:1;margin-top:.12em}
+.c-lede{max-width:58ch;font-size:clamp(1.08rem,1.6vw,1.28rem);margin-top:26px;line-height:1.55}
+.fiche{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-top:1px solid var(--ink);margin-top:44px}
+.fiche div{padding:14px 18px 14px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
+.fiche dt{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fiche dd{margin:0;font-weight:600;font-size:.95rem;line-height:1.45}
+.cover{margin-top:40px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--paper);cursor:zoom-in;padding:0;display:block;width:100%}
+.cover img{width:100%;max-height:78vh;object-fit:cover}
+
+/* sections with sticky label */
+.c-sec{display:grid;grid-template-columns:240px 1fr;gap:40px;padding-block:64px;border-top:1px solid var(--line)}
+.c-sec > *{min-width:0}
+.c-label{position:sticky;top:90px;align-self:start;display:flex;flex-direction:column;gap:6px}
+.c-label .no{font-family:var(--f-poster);font-size:2.6rem;line-height:1;color:var(--tint)}
+.c-label h2{font-family:var(--f-body);font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
+.c-body{display:flex;flex-direction:column;gap:18px;max-width:72ch}
+.c-body p{font-size:1.05rem}
+.c-body .intro{font-weight:700}
+.goals{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:g}
+.goals li{counter-increment:g;display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:baseline;padding:16px 18px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
+.goals li::before{content:"0" counter(g);font-family:var(--f-mono);font-size:.8rem;color:var(--tint);font-weight:500}
+.bul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.bul li{position:relative;padding-left:26px}
+.bul li::before{content:"";position:absolute;left:0;top:.62em;width:12px;height:2px;background:var(--tint)}
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:none}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.step .mono{color:var(--tint)}
+.step h3{font-family:var(--f-body);font-weight:800;font-size:1.08rem}
+.step p{font-size:.97rem;color:var(--ink);opacity:.86}
+@media (max-width:860px){.c-sec{grid-template-columns:1fr;gap:18px;padding-block:48px}.c-label{position:static;flex-direction:row;align-items:baseline;gap:12px}.c-label .no{font-size:1.8rem}.steps{grid-template-columns:1fr}}
+
+/* realisations */
+.grp{padding-block:56px;border-top:1px solid var(--line)}
+.grp-head{display:grid;grid-template-columns:1fr 1.1fr;gap:30px;align-items:end;margin-bottom:26px}
+.grp-head h3{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.05}
+.grp-head p{color:var(--muted);font-size:1rem}
+@media (max-width:860px){.grp-head{grid-template-columns:1fr;gap:10px}}
+.gal{columns:3 260px;column-gap:18px}
+.fig{break-inside:avoid;margin:0 0 22px;display:flex;flex-direction:column;gap:9px}
+.tile{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper);cursor:zoom-in;position:relative}
+.tile img{width:100%;transition:transform .8s var(--ease)}
+.tile:hover img{transform:scale(1.035)}
+.fig figcaption{font-size:.88rem;line-height:1.45;color:var(--muted);padding-right:6px}
+.fig figcaption b{color:var(--ink);font-weight:700}
+.more{display:flex;justify-content:center;margin-top:6px}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.strip .fig{flex:none;width:300px;scroll-snap-align:start;margin:0}
+.strip .tile img{height:400px;width:100%;object-fit:cover;object-position:top}
+@media (max-width:620px){.gal{columns:1}.strip .fig{width:240px}.strip .tile img{height:320px}}
+
+/* results */
+.res{background:var(--ink);color:#F3EEE4;border-radius:24px;padding:48px;margin-block:64px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.res .mono{color:#A49C8D}
+.res h2{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.4rem,5vw,3.8rem);line-height:.95;margin-top:10px}
+.res h2 .serif{color:var(--tint-soft)}
+.res-kpis{display:grid;gap:12px}
+.res-kpi{border:1px solid #302B22;border-radius:14px;padding:16px 18px;display:flex;align-items:baseline;gap:14px}
+.res-kpi b{font-family:var(--f-poster);font-weight:400;font-size:clamp(2rem,4vw,2.8rem);line-height:1;color:var(--tint-soft);white-space:nowrap}
+.res-kpi span{font-size:.92rem;color:#CFC7B8}
+.res-text{display:flex;flex-direction:column;gap:14px;margin-top:20px;color:#E6E0D4}
+.res-note{font-size:.8rem;color:#A49C8D}
+@media (max-width:860px){.res{grid-template-columns:1fr;padding:30px 22px;gap:24px}}
+.learn{padding-block:30px 70px}
+.learn blockquote{margin:0;font-family:var(--f-serif);font-style:italic;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.3;max-width:34ch}
+.learn blockquote::before{content:"« ";color:var(--tint)}
+.learn blockquote::after{content:" »";color:var(--tint)}
+
+/* freelance */
+.client{padding-block:60px;border-top:1px solid var(--line);scroll-margin-top:70px}
+.client-head{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-bottom:28px}
+.client-head h2{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.6rem);line-height:.95;margin-top:10px}
+.client-head h2 .serif{display:block;color:var(--tint);font-size:.62em}
+.client-body{display:flex;flex-direction:column;gap:14px}
+.feedback{border-left:3px solid var(--tint);padding:12px 18px;background:var(--paper);border-radius:0 12px 12px 0;font-size:.98rem}
+.feedback .mono{display:block;margin-bottom:4px}
+@media (max-width:860px){.client-head{grid-template-columns:1fr;gap:16px}}
+
+/* next */
+.next{display:block;text-decoration:none;background:var(--ink);color:#F3EEE4;border-radius:24px;padding:40px;margin-block:30px 50px;position:relative;overflow:hidden}
+.next .mono{color:#A49C8D}
+.next h2{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.6rem,7vw,5.4rem);line-height:.9;margin-top:12px;transition:transform .5s var(--ease)}
+.next h2 .serif{color:var(--ntint,#D9B36C)}
+.next:hover h2{transform:translateX(12px)}
+.next .arrow{position:absolute;right:40px;top:50%;translate:0 -50%;font-size:3rem;transition:transform .5s var(--ease)}
+.next:hover .arrow{transform:translateX(8px)}
+@media (max-width:620px){.next{padding:28px 22px}.next .arrow{display:none}}
+footer{padding-block:26px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center}
+
+@media (prefers-reduced-motion: no-preference){
+  .c-hero > *{animation:rise .9s var(--ease) both}
+  .c-hero > :nth-child(2){animation-delay:.08s}.c-hero > :nth-child(3){animation-delay:.16s}.c-hero > :nth-child(4){animation-delay:.24s}.c-hero > :nth-child(5){animation-delay:.32s}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}}
+  [data-a]{transition:opacity .9s var(--ease),transform .9s var(--ease)}
+  [data-a].pending{opacity:0;transform:translateY(50px)}
+}
+
+.lb{position:fixed;inset:0;z-index:100;background:#0B0A08;height:100vh;height:100dvh;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;gap:12px;
+  padding:calc(14px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));animation:fade .25s}
+.lb[hidden]{display:none}
+.lb .mono{color:#A49C8D}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.lb-stage{position:relative;display:flex;align-items:center;justify-content:center;min-height:0;overflow:hidden}
+.lb-stage img{max-height:calc(100vh - 170px);max-height:calc(100dvh - 170px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));max-width:calc(100% - 120px);width:auto;height:auto;object-fit:contain;border-radius:8px;animation:zoomin .35s cubic-bezier(.2,.7,.2,1)}
+.lb-cap{text-align:center;color:#D8D1C3;font-size:.92rem;max-width:70ch;margin:0 auto}
+.lb-btn{background:#17150F;color:#F3EEE4;border:1px solid #302B22;border-radius:999px;padding:9px 16px;font-weight:700;cursor:pointer;font-family:inherit}
+.lb-nav{position:absolute;top:50%;translate:0 -50%;width:48px;height:48px;border-radius:50%;background:rgba(23,21,15,.85);border:1px solid #302B22;color:#F3EEE4;font-size:1.3rem;cursor:pointer}
+.lb-nav.prev{left:0}.lb-nav.next{right:0}
+@media (max-width:620px){.lb-stage img{max-width:100%}.lb-nav{top:auto;bottom:6px;translate:none;width:42px;height:42px}}
+@keyframes fade{from{opacity:0}}
+@keyframes zoomin{from{opacity:0;transform:scale(.95)}}
+</style>
+<style>:root{--tint:#D9532C;--tint-soft:#F6E3D9}</style>
+</head>
+<body>
+<span id="top"></span><div class="progress" aria-hidden="true"></div>
+<nav aria-label="Navigation"><div class="wrap">
+  <a class="back" href="index.html#projets" data-back>← <b>KEVIN NGUYEN</b></a>
+  <div class="navlinks"><a href="sushi-2-go.html#top" class="on">Sushi 2 Go</a><a href="hem-8.html#top">Hẻm 8</a><a href="cafe-koem.html#top">Café Koem</a><a href="duckee.html#top">Duckee</a><a href="freelance.html#top">Freelance</a></div>
+  <a class="btn" href="index.html#contact">Me contacter</a>
+</div></nav>
+<main>
+<header class="wrap c-hero">
+  <div class="kicker"><span class="mono">Projet 01 · Restauration · Nantes · 2024–2025</span></div>
+  <h1 class="c-title">Sushi 2 Go<span class="serif">de zéro à l’ouverture.</span></h1>
+  <p class="c-lede">Créer de A à Z la marque d’un restaurant de sushis à Nantes pour la start-up franco-vietnamienne Vietinnovation : du choix du nom jusqu’au jour de l’ouverture, le 1er juin 2025.</p>
+  <dl class="fiche"><div><dt>Client</dt><dd>Vietinnovation, start-up franco-vietnamienne</dd></div><div><dt>Secteur</dt><dd>Restauration japonaise, sur place et à emporter</dd></div><div><dt>Mon rôle</dt><dd>Responsable marketing, seul en charge du projet</dd></div><div><dt>Période</dt><dd>Oct. 2024 – juin 2025</dd></div><div><dt>Cible</dt><dd>Amateurs de cuisine japonaise à Nantes : salariés et étudiants du quartier, familles</dd></div><div><dt>Outils</dt><dd>Illustrator, Photoshop, InDesign, Canva</dd></div><div><dt>Livrables</dt><dd>Nom, logo, charte, menu de 16 pages, 7 posts, invitations, packaging, tenues</dd></div></dl>
+  <div data-set><button class="cover tile" type="button" data-cap="Planche de charte graphique : grille du logo, couleurs RVB et CMJN, enseigne, packaging à emporter, sacs kraft, gobelets et tenues de l’équipe." aria-label="Agrandir l’image de couverture"><img src="img/s2g-charte.webp" alt="Planche de charte graphique : grille du logo, couleurs RVB et CMJN, enseigne, packaging à emporter, sacs kraft, gobelets et tenues de l’équipe." width="1148" height="1600" decoding="async"></button></div>
+</header><section class="wrap c-sec" data-a><div class="c-label"><span class="no">01</span><h2>Contexte</h2></div><div class="c-body"><p>Vietinnovation voulait ouvrir un restaurant de sushis au 14 bis rue de Jemmapes, à Nantes, sur place et à emporter. Au départ, il n’y avait rien : ni nom, ni logo, ni équipe marketing.</p><p>Le restaurant devait se faire une place dans une ville où les enseignes de sushis sont déjà nombreuses, et parler à deux publics différents : les salariés et étudiants pressés du midi, et les familles du soir.</p></div></section><section class="wrap c-sec" data-a><div class="c-label"><span class="no">02</span><h2>Objectifs</h2></div><div class="c-body"><ol class="goals"><li>Donner au restaurant un nom et une identité faciles à retenir, déclinables du gobelet jusqu’à l’enseigne.</li><li>Se distinguer par une expérience plus culturelle, et pas seulement par le prix.</li><li>Faire connaître l’ouverture et attirer les premiers clients dès la première semaine.</li></ol></div></section><section class="wrap c-sec" data-a><div class="c-label"><span class="no">03</span><h2>Mon rôle</h2></div><div class="c-body"><p class="intro">J’ai porté le projet seul, du concept jusqu’à l’ouverture.</p><ul class="bul"><li>Concept et naming : « Sushi 2 Go », un nom court qui dit à la fois le produit et l’usage à emporter.</li><li>Création du logo et de la charte graphique : couleurs, typographies, déclinaisons.</li><li>Conception éditoriale et direction artistique du menu de 16 pages.</li><li>Stratégie de lancement sur Instagram et Facebook, avec une série de 7 publications.</li><li>Supports imprimés : carte d’invitation, affiches, packaging, sacs et tenues du personnel.</li><li>Coordination avec les partenaires, les imprimeurs et la logistique jusqu’au jour J.</li></ul></div></section><section class="wrap c-sec" data-a><div class="c-label"><span class="no">04</span><h2>Démarche</h2></div><div class="c-body"><div class="steps"><div class="step"><span class="mono">Étape 1</span><h3>Définir les publics</h3><p>Trois moments de consommation : le déjeuner rapide des salariés, la pause des étudiants du quartier, le dîner en famille. Chaque support devait parler aux trois.</p></div><div class="step"><span class="mono">Étape 2</span><h3>Choisir un angle</h3><p>Faire découvrir la culture japonaise, pas seulement vendre des sushis. Cet angle a guidé le nom, le logo et surtout le menu.</p></div><div class="step"><span class="mono">Étape 3</span><h3>Créer un système</h3><p>Noir, blanc, une touche d’orange et un motif de vagues : les mêmes codes reviennent sur le logo, le menu, le packaging et les réseaux sociaux.</p></div><div class="step"><span class="mono">Étape 4</span><h3>Lancer</h3><p>Une série Instagram pour créer l’attente, des cartes d’invitation à -10 % distribuées dans le quartier, puis l’ouverture le 1er juin 2025.</p></div></div></div></section><section class="wrap" id="realisations" style="padding-top:20px"><div class="c-sec" style="padding-bottom:0"><div class="c-label"><span class="no">05</span><h2>Réalisations</h2></div><div class="c-body"><p>Chaque visuel est présenté avec son contexte. Cliquez sur une image pour l’agrandir, puis utilisez les flèches pour parcourir la série.</p></div></div><div class="grp" data-a><div class="grp-head"><h3>Identité visuelle</h3><p>Un logo dessiné en un seul trait, un poisson et une vague, en clin d’œil à l’estampe japonaise. Noir, blanc et une touche d’orange pour rester lisible sur tous les supports.</p></div><div class="gal" id="g-sushi-2-go-0" data-set><figure class="fig"><button class="tile" type="button" data-cap="Logo principal sur fond noir, utilisé pour l’enseigne, le menu et les réseaux sociaux." aria-label="Agrandir : Logo principal sur fond noir, utilisé pour l’enseigne, le menu et les réseaux sociaux."><img src="img/s2g-logo-noir.webp" alt="Logo principal sur fond noir, utilisé pour l’enseigne, le menu et les réseaux sociaux." width="1400" height="789" loading="lazy" decoding="async"></button><figcaption>Logo principal sur fond noir, utilisé pour l’enseigne, le menu et les réseaux sociaux.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Version claire du logo sur un décor de montagnes et de vagues, pour les supports imprimés." aria-label="Agrandir : Version claire du logo sur un décor de montagnes et de vagues, pour les supports imprimés."><img src="img/s2g-logo-vague.webp" alt="Version claire du logo sur un décor de montagnes et de vagues, pour les supports imprimés." width="1050" height="1400" loading="lazy" decoding="async"></button><figcaption>Version claire du logo sur un décor de montagnes et de vagues, pour les supports imprimés.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Planche de charte graphique : grille du logo, couleurs RVB et CMJN, enseigne, packaging à emporter, sacs kraft, gobelets et tenues de l’équipe." aria-label="Agrandir : Planche de charte graphique : grille du logo, couleurs RVB et CMJN, enseigne, packaging à emporter, sacs kraft, gobelets et tenues de l’équipe."><img src="img/s2g-charte.webp" alt="Planche de charte graphique : grille du logo, couleurs RVB et CMJN, enseigne, packaging à emporter, sacs kraft, gobelets et tenues de l’équipe." width="1148" height="1600" loading="lazy" decoding="async"></button><figcaption>Planche de charte graphique : grille du logo, couleurs RVB et CMJN, enseigne, packaging à emporter, sacs kraft, gobelets et tenues de l’équipe.</figcaption></figure></div></div><div class="grp" data-a><div class="grp-head"><h3>Campagne de lancement sur Instagram</h3><p>Avant l’ouverture, 7 publications ont présenté le projet comme une histoire en plusieurs épisodes : le concept, le problème qu’il résout, les valeurs, la promesse. Objectif : créer de l’attente et expliquer pourquoi venir.</p></div><div class="gal" id="g-sushi-2-go-1" data-set><figure class="fig"><button class="tile" type="button" data-cap="« Pourquoi Sushi 2 Go ? » : la publication qui présente le concept du restaurant." aria-label="Agrandir : « Pourquoi Sushi 2 Go ? » : la publication qui présente le concept du restaurant."><img src="img/s2g-pourquoi.webp" alt="« Pourquoi Sushi 2 Go ? » : la publication qui présente le concept du restaurant." width="1050" height="1400" loading="lazy" decoding="async"></button><figcaption>« Pourquoi Sushi 2 Go ? » : la publication qui présente le concept du restaurant.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Quels problèmes ? » : les attentes des amateurs de sushis auxquelles le restaurant veut répondre." aria-label="Agrandir : « Quels problèmes ? » : les attentes des amateurs de sushis auxquelles le restaurant veut répondre."><img src="img/s2g-problemes.webp" alt="« Quels problèmes ? » : les attentes des amateurs de sushis auxquelles le restaurant veut répondre." width="1050" height="1400" loading="lazy" decoding="async"></button><figcaption>« Quels problèmes ? » : les attentes des amateurs de sushis auxquelles le restaurant veut répondre.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Parcours &amp; solutions » : la réponse de Sushi 2 Go à ces attentes." aria-label="Agrandir : « Parcours &amp; solutions » : la réponse de Sushi 2 Go à ces attentes."><img src="img/s2g-solutions.webp" alt="« Parcours &amp; solutions » : la réponse de Sushi 2 Go à ces attentes." width="1050" height="1400" loading="lazy" decoding="async"></button><figcaption>« Parcours &amp; solutions » : la réponse de Sushi 2 Go à ces attentes.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Nos valeurs fondamentales » : ce qui guide le restaurant au quotidien." aria-label="Agrandir : « Nos valeurs fondamentales » : ce qui guide le restaurant au quotidien."><img src="img/s2g-valeurs.webp" alt="« Nos valeurs fondamentales » : ce qui guide le restaurant au quotidien." width="1050" height="1400" loading="lazy" decoding="async"></button><figcaption>« Nos valeurs fondamentales » : ce qui guide le restaurant au quotidien.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Qualité authentique ? » : mettre en avant les produits et le savoir-faire." aria-label="Agrandir : « Qualité authentique ? » : mettre en avant les produits et le savoir-faire."><img src="img/s2g-qualite.webp" alt="« Qualité authentique ? » : mettre en avant les produits et le savoir-faire." width="1050" height="1400" loading="lazy" decoding="async"></button><figcaption>« Qualité authentique ? » : mettre en avant les produits et le savoir-faire.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Nouvelle expérience » : ce qui change pour le client par rapport à une enseigne classique." aria-label="Agrandir : « Nouvelle expérience » : ce qui change pour le client par rapport à une enseigne classique."><img src="img/s2g-experience.webp" alt="« Nouvelle expérience » : ce qui change pour le client par rapport à une enseigne classique." width="1050" height="1400" loading="lazy" decoding="async"></button><figcaption>« Nouvelle expérience » : ce qui change pour le client par rapport à une enseigne classique.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Votre satisfaction, notre priorité » : la promesse de service, en version claire." aria-label="Agrandir : « Votre satisfaction, notre priorité » : la promesse de service, en version claire."><img src="img/s2g-satisfaction.webp" alt="« Votre satisfaction, notre priorité » : la promesse de service, en version claire." width="1050" height="1400" loading="lazy" decoding="async"></button><figcaption>« Votre satisfaction, notre priorité » : la promesse de service, en version claire.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Bannière Facebook déclinée du même message, sur le motif de vagues de la marque." aria-label="Agrandir : Bannière Facebook déclinée du même message, sur le motif de vagues de la marque."><img src="img/s2g-banner.webp" alt="Bannière Facebook déclinée du même message, sur le motif de vagues de la marque." width="1800" height="685" loading="lazy" decoding="async"></button><figcaption>Bannière Facebook déclinée du même message, sur le motif de vagues de la marque.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Affiche du plateau phare : le produit signature, avec un bouton « Réservez maintenant »." aria-label="Agrandir : Affiche du plateau phare : le produit signature, avec un bouton « Réservez maintenant »."><img src="img/s2g-plateau.webp" alt="Affiche du plateau phare : le produit signature, avec un bouton « Réservez maintenant »." width="1082" height="1400" loading="lazy" decoding="async"></button><figcaption>Affiche du plateau phare : le produit signature, avec un bouton « Réservez maintenant ».</figcaption></figure><figure class="fig" hidden><button class="tile" type="button" data-cap="Le plateau phare en format paysage, pour les publications Facebook." aria-label="Agrandir : Le plateau phare en format paysage, pour les publications Facebook."><img src="img/s2g-plateau-l.webp" alt="Le plateau phare en format paysage, pour les publications Facebook." width="1400" height="990" loading="lazy" decoding="async"></button><figcaption>Le plateau phare en format paysage, pour les publications Facebook.</figcaption></figure></div><div class="more"><button class="btn ghost" type="button" data-gal="g-sushi-2-go-1">Voir les 1 autres visuels ↓</button></div></div><div class="grp" data-a><div class="grp-head"><h3>Ouverture du 1er juin 2025</h3><p>Une carte d’invitation distribuée dans le quartier avant l’ouverture : -10 % pendant la première semaine, l’adresse, les horaires et l’ouverture 7 jours sur 7.</p></div><div class="gal" id="g-sushi-2-go-2" data-set><figure class="fig"><button class="tile" type="button" data-cap="Carte d’invitation, recto : « Ouverture officielle », -10 % de réduction, 14 bis rue de Jemmapes, 11 h 30 – 14 h et 18 h – 22 h 30." aria-label="Agrandir : Carte d’invitation, recto : « Ouverture officielle », -10 % de réduction, 14 bis rue de Jemmapes, 11 h 30 – 14 h et 18 h – 22 h 30."><img src="img/s2g-invitation.webp" alt="Carte d’invitation, recto : « Ouverture officielle », -10 % de réduction, 14 bis rue de Jemmapes, 11 h 30 – 14 h et 18 h – 22 h 30." width="1082" height="1400" loading="lazy" decoding="async"></button><figcaption>Carte d’invitation, recto : « Ouverture officielle », -10 % de réduction, 14 bis rue de Jemmapes, 11 h 30 – 14 h et 18 h – 22 h 30.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Version paysage avec, au centre, le rituel de dégustation en trois étapes : tremper, déguster, se nettoyer le palais au gingembre." aria-label="Agrandir : Version paysage avec, au centre, le rituel de dégustation en trois étapes : tremper, déguster, se nettoyer le palais au gingembre."><img src="img/s2g-invitation-l.webp" alt="Version paysage avec, au centre, le rituel de dégustation en trois étapes : tremper, déguster, se nettoyer le palais au gingembre." width="1400" height="980" loading="lazy" decoding="async"></button><figcaption>Version paysage avec, au centre, le rituel de dégustation en trois étapes : tremper, déguster, se nettoyer le palais au gingembre.</figcaption></figure></div></div><div class="grp" data-a><div class="grp-head"><h3>Le menu : 16 pages pour raconter le Japon</h3><p>Le menu est pensé comme un petit livre : chaque double page associe un plat à un élément de la culture japonaise, pour occuper l’attente et donner envie de revenir. Faites défiler pour feuilleter.</p></div><div class="strip" data-set><figure class="fig"><button class="tile" type="button" data-cap="Le menu imprimé, relié à spirale, tel qu’il est utilisé en salle." aria-label="Agrandir : Le menu imprimé, relié à spirale, tel qu’il est utilisé en salle."><img src="img/s2g-menu-photo.webp" alt="Le menu imprimé, relié à spirale, tel qu’il est utilisé en salle." width="774" height="556" loading="lazy" decoding="async"></button><figcaption>Le menu imprimé, relié à spirale, tel qu’il est utilisé en salle.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Couverture : le mot « Menu » en lettres fines et le logo, sur fond noir à motif de vagues." aria-label="Agrandir : Couverture : le mot « Menu » en lettres fines et le logo, sur fond noir à motif de vagues."><img src="img/s2g-menu-p1.webp" alt="Couverture : le mot « Menu » en lettres fines et le logo, sur fond noir à motif de vagues." width="851" height="1100" loading="lazy" decoding="async"></button><figcaption>Couverture : le mot « Menu » en lettres fines et le logo, sur fond noir à motif de vagues.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Le jardin zen de Ryoan-ji : topographie du vide », page d’ouverture du récit." aria-label="Agrandir : « Le jardin zen de Ryoan-ji : topographie du vide », page d’ouverture du récit."><img src="img/s2g-menu-p2.webp" alt="« Le jardin zen de Ryoan-ji : topographie du vide », page d’ouverture du récit." width="851" height="1100" loading="lazy" decoding="async"></button><figcaption>« Le jardin zen de Ryoan-ji : topographie du vide », page d’ouverture du récit.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Les entrées et leurs prix : salades, soupe miso, gyozas, brochettes." aria-label="Agrandir : Les entrées et leurs prix : salades, soupe miso, gyozas, brochettes."><img src="img/s2g-menu-p3.webp" alt="Les entrées et leurs prix : salades, soupe miso, gyozas, brochettes." width="851" height="1100" loading="lazy" decoding="async"></button><figcaption>Les entrées et leurs prix : salades, soupe miso, gyozas, brochettes.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Solitude rituelle au pied du Fuji » : le plateau de sushis comme moment à soi." aria-label="Agrandir : « Solitude rituelle au pied du Fuji » : le plateau de sushis comme moment à soi."><img src="img/s2g-menu-p4.webp" alt="« Solitude rituelle au pied du Fuji » : le plateau de sushis comme moment à soi." width="851" height="1100" loading="lazy" decoding="async"></button><figcaption>« Solitude rituelle au pied du Fuji » : le plateau de sushis comme moment à soi.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Tanabata : temporalité, distance et désir », la fête des étoiles japonaise." aria-label="Agrandir : « Tanabata : temporalité, distance et désir », la fête des étoiles japonaise."><img src="img/s2g-menu-p6.webp" alt="« Tanabata : temporalité, distance et désir », la fête des étoiles japonaise." width="851" height="1100" loading="lazy" decoding="async"></button><figcaption>« Tanabata : temporalité, distance et désir », la fête des étoiles japonaise.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Ikebana culinaire » et « Hybridation, temporalité urbaine et mémoire populaire »." aria-label="Agrandir : « Ikebana culinaire » et « Hybridation, temporalité urbaine et mémoire populaire »."><img src="img/s2g-menu-p8.webp" alt="« Ikebana culinaire » et « Hybridation, temporalité urbaine et mémoire populaire »." width="851" height="1100" loading="lazy" decoding="async"></button><figcaption>« Ikebana culinaire » et « Hybridation, temporalité urbaine et mémoire populaire ».</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Onigiri : poétique du simple », l’histoire de la boulette de riz." aria-label="Agrandir : « Onigiri : poétique du simple », l’histoire de la boulette de riz."><img src="img/s2g-menu-p10.webp" alt="« Onigiri : poétique du simple », l’histoire de la boulette de riz." width="851" height="1100" loading="lazy" decoding="async"></button><figcaption>« Onigiri : poétique du simple », l’histoire de la boulette de riz.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Sakura » : la fleur de cerisier et l’éphémère." aria-label="Agrandir : « Sakura » : la fleur de cerisier et l’éphémère."><img src="img/s2g-menu-p12.webp" alt="« Sakura » : la fleur de cerisier et l’éphémère." width="851" height="1100" loading="lazy" decoding="async"></button><figcaption>« Sakura » : la fleur de cerisier et l’éphémère.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="« Itadakimasu, la gratitude muette » : le rituel avant le repas." aria-label="Agrandir : « Itadakimasu, la gratitude muette » : le rituel avant le repas."><img src="img/s2g-menu-p14.webp" alt="« Itadakimasu, la gratitude muette » : le rituel avant le repas." width="851" height="1100" loading="lazy" decoding="async"></button><figcaption>« Itadakimasu, la gratitude muette » : le rituel avant le repas.</figcaption></figure></div></div></section><section class="wrap"><div class="res" data-a>
+  <div><p class="mono">06 · Résultats</p><h2>Ce que le projet <span class="serif">a changé.</span></h2><div class="res-text"><p>Le restaurant a ouvert le 1er juin 2025 avec une identité complète et cohérente, de l’enseigne au menu. J’ai quitté le projet après l’ouverture ; le restaurant continue aujourd’hui de fonctionner avec la marque que j’ai créée.</p></div></div>
+  <div class="res-kpis"><div class="res-kpi"><b>16</b><span>pages de menu éditorial</span></div><div class="res-kpi"><b>7</b><span>publications de lancement</span></div><div class="res-kpi"><b>1er juin 2025</b><span>ouverture du restaurant</span></div></div>
+</div></section>
+<section class="wrap learn" data-a><p class="mono" style="margin-bottom:14px">07 · Ce que j’ai appris</p><blockquote>Lancer une marque seul m’a appris à tenir une vision du premier croquis jusqu’à l’imprimeur, et à prioriser quand tout est urgent. Une identité forte se construit dans les détails : le même motif de vague revient du gobelet jusqu’à la dernière page du menu.</blockquote></section><section class="wrap"><a class="next" href="hem-8.html#top" style="--ntint:#F7E7D2"><p class="mono">Projet suivant · 02</p><h2>Hẻm 8 <span class="serif">relancer après le Covid.</span></h2><span class="arrow" aria-hidden="true">→</span></a></section>
+</main>
+<footer><div class="wrap"><p class="mono">Duc Kien (Kevin) Nguyen · Portfolio 2026</p><a class="btn ghost" href="index.html#projets" data-back>← Tous les projets</a></div></footer>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Visuel agrandi">
+  <div class="lb-top"><span class="mono" id="lb-n"></span><button type="button" class="lb-btn" id="lb-close">Fermer ✕</button></div>
+  <div class="lb-stage"><img id="lb-img" alt=""><button type="button" class="lb-nav prev" id="lb-prev" aria-label="Visuel précédent">←</button><button type="button" class="lb-nav next" id="lb-next" aria-label="Visuel suivant">→</button></div>
+  <p class="lb-cap" id="lb-cap"></p>
+</div>
+
+<script>
+(function(){
+  try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(err){}
+  function toTop(){if(!location.hash||location.hash==='#top')window.scrollTo(0,0)}
+  toTop();addEventListener('pageshow',toTop);addEventListener('load',toTop);
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,root=document.documentElement;
+  if(!reduce && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('pending');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:0.02});
+    document.querySelectorAll('[data-a]').forEach(function(el){if(el.getBoundingClientRect().top>innerHeight*0.92){el.classList.add('pending');io.observe(el)}});
+  }
+  addEventListener('scroll',function(){var m=root.scrollHeight-innerHeight;root.style.setProperty('--sp',m>0?scrollY/m:0)},{passive:true});
+  document.querySelectorAll('.more button').forEach(function(b){b.addEventListener('click',function(){
+    document.getElementById(b.dataset.gal).querySelectorAll('[hidden]').forEach(function(t){t.hidden=false});b.parentNode.remove();})});
+  var lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-cap'),ln=document.getElementById('lb-n'),set=[],cur=0,last=null;
+  function show(i){cur=(i+set.length)%set.length;var it=set[cur];li.src=it.src;li.alt=it.cap;lc.textContent=it.cap;ln.textContent=(cur+1)+' / '+set.length;li.style.animation='none';void li.offsetWidth;li.style.animation=''}
+  function open(items,i,from){set=items;last=from;lb.hidden=false;root.style.overflow='hidden';show(i);document.getElementById('lb-close').focus()}
+  function close(){lb.hidden=true;root.style.overflow='';li.removeAttribute('src');if(last)last.focus()}
+  document.querySelectorAll('.tile').forEach(function(t){t.addEventListener('click',function(){
+    var box=t.closest('[data-set]');var tiles=[].slice.call(box.querySelectorAll('.tile'));
+    open(tiles.map(function(x){var im=x.querySelector('img');return{src:im.getAttribute('src'),cap:x.dataset.cap}}),tiles.indexOf(t),t)})});
+  document.getElementById('lb-close').addEventListener('click',close);
+  document.getElementById('lb-prev').addEventListener('click',function(){show(cur-1)});
+  document.getElementById('lb-next').addEventListener('click',function(){show(cur+1)});
+  lb.addEventListener('click',function(x){if(x.target===lb||x.target.classList.contains('lb-stage'))close()});
+  addEventListener('keydown',function(x){if(lb.hidden)return;if(x.key==='Escape')close();if(x.key==='ArrowLeft')show(cur-1);if(x.key==='ArrowRight')show(cur+1)});
+  var sx=null;lb.addEventListener('touchstart',function(x){sx=x.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(x){if(sx===null)return;var d=x.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(cur+(d<0?1:-1));sx=null});
+  // back to portfolio: prefer history when coming from it
+  document.querySelectorAll('[data-back]').forEach(function(a){a.addEventListener('click',function(x){
+    try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){x.preventDefault();history.back()}}catch(err){}
+  })});
+})();
+</script>
+</body>
+</html>

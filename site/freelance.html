@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Freelance · Kevin Nguyen</title>
+<link rel="canonical" href="https://kevin-nguyen.me/freelance.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kevin Nguyen – Portfolio">
+<meta property="og:title" content="Freelance · Kevin Nguyen">
+<meta property="og:description" content="À côté de mes postes, j’accompagne des commerces et des start-ups sur leurs supports de communication : menus, PLV, roll-ups, logos. Voici six missions, avec leur contexte et ce que j’ai livré.">
+<meta property="og:url" content="https://kevin-nguyen.me/freelance.html">
+<meta property="og:image" content="https://kevin-nguyen.me/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Kevin Nguyen, Assistant Marketing en alternance">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Duc Kien (Kevin) Nguyen">
+
+<meta name="description" content="À côté de mes postes, j’accompagne des commerces et des start-ups sur leurs supports de communication : menus, PLV, roll-ups, logos. Voici six missions, avec leur contexte et ce que j’ai livré.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: case-study reading page — ivory paper, ink type, project tint; sticky section labels on the left, content on the right.
+   Single light look by choice (the home page is the dark one). */
+:root{
+  --bg:#F5F0E6; --paper:#FBF8F2; --ink:#16130E; --muted:#6B6355; --line:#E1D8C6; --gold:#9C7A2E;
+  --tint:#9C7A2E; --tint-soft:#F1E6CC;
+  --f-poster:"Anton","Impact","Arial Narrow",sans-serif;
+  --f-serif:"Instrument Serif","Times New Roman",Georgia,serif;
+  --f-body:"Manrope","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --max:1180px; --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--tint);outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4{margin:0;font-weight:400;text-wrap:balance}
+p{margin:0}
+[hidden]{display:none!important}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.serif{font-family:var(--f-serif);font-style:italic;text-transform:none;letter-spacing:0}
+.progress{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:3px;z-index:70;background:var(--tint);transform-origin:0 50%;transform:scaleX(var(--sp,0))}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding-block:12px}
+.back{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:.9rem;white-space:nowrap}
+.back b{font-family:var(--f-poster);font-weight:400;font-size:1.15rem;letter-spacing:.03em}
+.navlinks{display:flex;gap:6px;align-items:center;overflow-x:auto;scrollbar-width:none}
+.navlinks a{text-decoration:none;font-size:.82rem;font-weight:600;color:var(--muted);padding:6px 11px;border-radius:999px;white-space:nowrap}
+.navlinks a:hover{color:var(--ink);background:var(--paper)}
+.navlinks a.on{color:var(--ink);background:var(--tint-soft)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:700;font-size:.9rem;text-decoration:none;border:1px solid var(--ink);background:var(--ink);color:var(--bg);white-space:nowrap;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+@media (max-width:860px){.navlinks{display:none}}
+
+/* header */
+.c-hero{padding-block:64px 40px}
+.kicker{display:flex;align-items:center;gap:12px}
+.kicker::before{content:"";width:30px;height:2px;background:var(--tint)}
+.kicker .mono{color:var(--tint)}
+.c-title{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(3.4rem,10vw,8.6rem);line-height:.88;margin-top:18px}
+.c-title .serif{display:block;color:var(--tint);font-size:.62em;line-height:1;margin-top:.12em}
+.c-lede{max-width:58ch;font-size:clamp(1.08rem,1.6vw,1.28rem);margin-top:26px;line-height:1.55}
+.fiche{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-top:1px solid var(--ink);margin-top:44px}
+.fiche div{padding:14px 18px 14px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
+.fiche dt{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fiche dd{margin:0;font-weight:600;font-size:.95rem;line-height:1.45}
+.cover{margin-top:40px;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--paper);cursor:zoom-in;padding:0;display:block;width:100%}
+.cover img{width:100%;max-height:78vh;object-fit:cover}
+
+/* sections with sticky label */
+.c-sec{display:grid;grid-template-columns:240px 1fr;gap:40px;padding-block:64px;border-top:1px solid var(--line)}
+.c-sec > *{min-width:0}
+.c-label{position:sticky;top:90px;align-self:start;display:flex;flex-direction:column;gap:6px}
+.c-label .no{font-family:var(--f-poster);font-size:2.6rem;line-height:1;color:var(--tint)}
+.c-label h2{font-family:var(--f-body);font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
+.c-body{display:flex;flex-direction:column;gap:18px;max-width:72ch}
+.c-body p{font-size:1.05rem}
+.c-body .intro{font-weight:700}
+.goals{list-style:none;margin:0;padding:0;display:grid;gap:12px;counter-reset:g}
+.goals li{counter-increment:g;display:grid;grid-template-columns:44px 1fr;gap:10px;align-items:baseline;padding:16px 18px;background:var(--paper);border:1px solid var(--line);border-radius:14px}
+.goals li::before{content:"0" counter(g);font-family:var(--f-mono);font-size:.8rem;color:var(--tint);font-weight:500}
+.bul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.bul li{position:relative;padding-left:26px}
+.bul li::before{content:"";position:absolute;left:0;top:.62em;width:12px;height:2px;background:var(--tint)}
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:none}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.step .mono{color:var(--tint)}
+.step h3{font-family:var(--f-body);font-weight:800;font-size:1.08rem}
+.step p{font-size:.97rem;color:var(--ink);opacity:.86}
+@media (max-width:860px){.c-sec{grid-template-columns:1fr;gap:18px;padding-block:48px}.c-label{position:static;flex-direction:row;align-items:baseline;gap:12px}.c-label .no{font-size:1.8rem}.steps{grid-template-columns:1fr}}
+
+/* realisations */
+.grp{padding-block:56px;border-top:1px solid var(--line)}
+.grp-head{display:grid;grid-template-columns:1fr 1.1fr;gap:30px;align-items:end;margin-bottom:26px}
+.grp-head h3{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.9rem,3.6vw,2.8rem);line-height:1.05}
+.grp-head p{color:var(--muted);font-size:1rem}
+@media (max-width:860px){.grp-head{grid-template-columns:1fr;gap:10px}}
+.gal{columns:3 260px;column-gap:18px}
+.fig{break-inside:avoid;margin:0 0 22px;display:flex;flex-direction:column;gap:9px}
+.tile{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper);cursor:zoom-in;position:relative}
+.tile img{width:100%;transition:transform .8s var(--ease)}
+.tile:hover img{transform:scale(1.035)}
+.fig figcaption{font-size:.88rem;line-height:1.45;color:var(--muted);padding-right:6px}
+.fig figcaption b{color:var(--ink);font-weight:700}
+.more{display:flex;justify-content:center;margin-top:6px}
+.strip{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.strip .fig{flex:none;width:300px;scroll-snap-align:start;margin:0}
+.strip .tile img{height:400px;width:100%;object-fit:cover;object-position:top}
+@media (max-width:620px){.gal{columns:1}.strip .fig{width:240px}.strip .tile img{height:320px}}
+
+/* results */
+.res{background:var(--ink);color:#F3EEE4;border-radius:24px;padding:48px;margin-block:64px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.res .mono{color:#A49C8D}
+.res h2{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.4rem,5vw,3.8rem);line-height:.95;margin-top:10px}
+.res h2 .serif{color:var(--tint-soft)}
+.res-kpis{display:grid;gap:12px}
+.res-kpi{border:1px solid #302B22;border-radius:14px;padding:16px 18px;display:flex;align-items:baseline;gap:14px}
+.res-kpi b{font-family:var(--f-poster);font-weight:400;font-size:clamp(2rem,4vw,2.8rem);line-height:1;color:var(--tint-soft);white-space:nowrap}
+.res-kpi span{font-size:.92rem;color:#CFC7B8}
+.res-text{display:flex;flex-direction:column;gap:14px;margin-top:20px;color:#E6E0D4}
+.res-note{font-size:.8rem;color:#A49C8D}
+@media (max-width:860px){.res{grid-template-columns:1fr;padding:30px 22px;gap:24px}}
+.learn{padding-block:30px 70px}
+.learn blockquote{margin:0;font-family:var(--f-serif);font-style:italic;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.3;max-width:34ch}
+.learn blockquote::before{content:"« ";color:var(--tint)}
+.learn blockquote::after{content:" »";color:var(--tint)}
+
+/* freelance */
+.client{padding-block:60px;border-top:1px solid var(--line);scroll-margin-top:70px}
+.client-head{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-bottom:28px}
+.client-head h2{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.6rem);line-height:.95;margin-top:10px}
+.client-head h2 .serif{display:block;color:var(--tint);font-size:.62em}
+.client-body{display:flex;flex-direction:column;gap:14px}
+.feedback{border-left:3px solid var(--tint);padding:12px 18px;background:var(--paper);border-radius:0 12px 12px 0;font-size:.98rem}
+.feedback .mono{display:block;margin-bottom:4px}
+@media (max-width:860px){.client-head{grid-template-columns:1fr;gap:16px}}
+
+/* next */
+.next{display:block;text-decoration:none;background:var(--ink);color:#F3EEE4;border-radius:24px;padding:40px;margin-block:30px 50px;position:relative;overflow:hidden}
+.next .mono{color:#A49C8D}
+.next h2{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.6rem,7vw,5.4rem);line-height:.9;margin-top:12px;transition:transform .5s var(--ease)}
+.next h2 .serif{color:var(--ntint,#D9B36C)}
+.next:hover h2{transform:translateX(12px)}
+.next .arrow{position:absolute;right:40px;top:50%;translate:0 -50%;font-size:3rem;transition:transform .5s var(--ease)}
+.next:hover .arrow{transform:translateX(8px)}
+@media (max-width:620px){.next{padding:28px 22px}.next .arrow{display:none}}
+footer{padding-block:26px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center}
+
+@media (prefers-reduced-motion: no-preference){
+  .c-hero > *{animation:rise .9s var(--ease) both}
+  .c-hero > :nth-child(2){animation-delay:.08s}.c-hero > :nth-child(3){animation-delay:.16s}.c-hero > :nth-child(4){animation-delay:.24s}.c-hero > :nth-child(5){animation-delay:.32s}
+  @keyframes rise{from{opacity:0;transform:translateY(24px)}}
+  [data-a]{transition:opacity .9s var(--ease),transform .9s var(--ease)}
+  [data-a].pending{opacity:0;transform:translateY(50px)}
+}
+
+.lb{position:fixed;inset:0;z-index:100;background:#0B0A08;height:100vh;height:100dvh;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;gap:12px;
+  padding:calc(14px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));animation:fade .25s}
+.lb[hidden]{display:none}
+.lb .mono{color:#A49C8D}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.lb-stage{position:relative;display:flex;align-items:center;justify-content:center;min-height:0;overflow:hidden}
+.lb-stage img{max-height:calc(100vh - 170px);max-height:calc(100dvh - 170px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));max-width:calc(100% - 120px);width:auto;height:auto;object-fit:contain;border-radius:8px;animation:zoomin .35s cubic-bezier(.2,.7,.2,1)}
+.lb-cap{text-align:center;color:#D8D1C3;font-size:.92rem;max-width:70ch;margin:0 auto}
+.lb-btn{background:#17150F;color:#F3EEE4;border:1px solid #302B22;border-radius:999px;padding:9px 16px;font-weight:700;cursor:pointer;font-family:inherit}
+.lb-nav{position:absolute;top:50%;translate:0 -50%;width:48px;height:48px;border-radius:50%;background:rgba(23,21,15,.85);border:1px solid #302B22;color:#F3EEE4;font-size:1.3rem;cursor:pointer}
+.lb-nav.prev{left:0}.lb-nav.next{right:0}
+@media (max-width:620px){.lb-stage img{max-width:100%}.lb-nav{top:auto;bottom:6px;translate:none;width:42px;height:42px}}
+@keyframes fade{from{opacity:0}}
+@keyframes zoomin{from{opacity:0;transform:scale(.95)}}
+</style>
+<style>:root{--tint:#9C7A2E;--tint-soft:#F1E6CC}</style>
+</head>
+<body>
+<span id="top"></span><div class="progress" aria-hidden="true"></div>
+<nav aria-label="Navigation"><div class="wrap">
+  <a class="back" href="index.html#projets" data-back>← <b>KEVIN NGUYEN</b></a>
+  <div class="navlinks"><a href="sushi-2-go.html#top">Sushi 2 Go</a><a href="hem-8.html#top">Hẻm 8</a><a href="cafe-koem.html#top">Café Koem</a><a href="duckee.html#top">Duckee</a><a href="freelance.html#top" class="on">Freelance</a></div>
+  <a class="btn" href="index.html#contact">Me contacter</a>
+</div></nav>
+<main>
+<header class="wrap c-hero">
+  <div class="kicker"><span class="mono">Freelance · France &amp; Vietnam · depuis 2020</span></div>
+  <h1 class="c-title">Freelance<span class="serif">6 clients, 6 univers.</span></h1>
+  <p class="c-lede">À côté de mes postes, j’accompagne des commerces et des start-ups sur leurs supports de communication : menus, PLV, roll-ups, logos. Voici six missions, avec leur contexte et ce que j’ai livré.</p>
+  <dl class="fiche"><div><dt>Foire de France</dt><dd><a href='#vietway-sale' style='text-decoration:none'>Vietway · Comptoir de cuisine japonaise ↓</a></dd></div><div><dt>Foire de France</dt><dd><a href='#vietway-sucre' style='text-decoration:none'>Vietway · Comptoir Taiyaki &amp; Bubble Waffle ↓</a></dd></div><div><dt>Luçon</dt><dd><a href='#leclerc' style='text-decoration:none'>Vietinnovation × E.Leclerc · Corner Sushi Bento ↓</a></dd></div><div><dt>Aix-en-Provence</dt><dd><a href='#aix' style='text-decoration:none'>Comptoir japonais · Menus « Japan Food Weekly » ↓</a></dd></div><div><dt>Salon de thé, France</dt><dd><a href='#komi' style='text-decoration:none'>Thé by KO-MI · Menus des boissons et des toppings ↓</a></dd></div><div><dt>Vietnam</dt><dd><a href='#tarot' style='text-decoration:none'>La Clé Tarot &amp; Tiệm Hoa Lạ · Identités visuelles ↓</a></dd></div></dl>
+</header><section class="wrap client" id="vietway-sale" data-a>
+  <div class="client-head">
+    <div><p class="mono" style="color:var(--tint)">Client 01 · Foire de France</p><h2>Vietway<span class="serif">Comptoir de cuisine japonaise</span></h2></div>
+    <div class="client-body"><p>Vietway tenait un stand de street food japonaise à la Foire de France. Il fallait que les visiteurs comprennent l’offre en quelques secondes, à plusieurs mètres de distance.</p><p class="mono">Ce que j’ai livré</p><ul class="bul"><li>9 panneaux illustrés, un par spécialité</li><li>3 roll-ups « Japanese Food »</li><li>Menus du comptoir</li></ul></div>
+  </div>
+  <div class="gal" id="g-fl-vietway-sale" data-set><figure class="fig"><button class="tile" type="button" data-cap="Panneau « Menu sushi » : un plateau illustré sur fond doré, avec lanternes et nuages rouges." aria-label="Agrandir : Panneau « Menu sushi » : un plateau illustré sur fond doré, avec lanternes et nuages rouges."><img src="img/fl-sa-0.webp" alt="Panneau « Menu sushi » : un plateau illustré sur fond doré, avec lanternes et nuages rouges." width="1100" height="990" loading="lazy" decoding="async"></button><figcaption>Panneau « Menu sushi » : un plateau illustré sur fond doré, avec lanternes et nuages rouges.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Panneau « Onigiri »." aria-label="Agrandir : Panneau « Onigiri »."><img src="img/fl-sa-1.webp" alt="Panneau « Onigiri »." width="1100" height="990" loading="lazy" decoding="async"></button><figcaption>Panneau « Onigiri ».</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Panneau « Nouilles »." aria-label="Agrandir : Panneau « Nouilles »."><img src="img/fl-sa-2.webp" alt="Panneau « Nouilles »." width="1100" height="990" loading="lazy" decoding="async"></button><figcaption>Panneau « Nouilles ».</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Panneau « Bao gouda »." aria-label="Agrandir : Panneau « Bao gouda »."><img src="img/fl-sa-3.webp" alt="Panneau « Bao gouda »." width="1100" height="990" loading="lazy" decoding="async"></button><figcaption>Panneau « Bao gouda ».</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Panneau « Donburi »." aria-label="Agrandir : Panneau « Donburi »."><img src="img/fl-sa-4.webp" alt="Panneau « Donburi »." width="1100" height="990" loading="lazy" decoding="async"></button><figcaption>Panneau « Donburi ».</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Panneau « Plateau mixte »." aria-label="Agrandir : Panneau « Plateau mixte »."><img src="img/fl-sa-5.webp" alt="Panneau « Plateau mixte »." width="1100" height="990" loading="lazy" decoding="async"></button><figcaption>Panneau « Plateau mixte ».</figcaption></figure><figure class="fig" hidden><button class="tile" type="button" data-cap="Panneau « Takoyaki »." aria-label="Agrandir : Panneau « Takoyaki »."><img src="img/fl-sa-6.webp" alt="Panneau « Takoyaki »." width="1100" height="990" loading="lazy" decoding="async"></button><figcaption>Panneau « Takoyaki ».</figcaption></figure><figure class="fig" hidden><button class="tile" type="button" data-cap="Panneau « Yakitori »." aria-label="Agrandir : Panneau « Yakitori »."><img src="img/fl-sa-7.webp" alt="Panneau « Yakitori »." width="1100" height="990" loading="lazy" decoding="async"></button><figcaption>Panneau « Yakitori ».</figcaption></figure><figure class="fig" hidden><button class="tile" type="button" data-cap="Panneau « Corn dog »." aria-label="Agrandir : Panneau « Corn dog »."><img src="img/fl-sa-8.webp" alt="Panneau « Corn dog »." width="1100" height="990" loading="lazy" decoding="async"></button><figcaption>Panneau « Corn dog ».</figcaption></figure><figure class="fig" hidden><button class="tile" type="button" data-cap="Roll-up « Japanese Food », version 1 : sushi, onigiri, yakitori, donburi." aria-label="Agrandir : Roll-up « Japanese Food », version 1 : sushi, onigiri, yakitori, donburi."><img src="img/fl-sa-ru0.webp" alt="Roll-up « Japanese Food », version 1 : sushi, onigiri, yakitori, donburi." width="596" height="1400" loading="lazy" decoding="async"></button><figcaption>Roll-up « Japanese Food », version 1 : sushi, onigiri, yakitori, donburi.</figcaption></figure><figure class="fig" hidden><button class="tile" type="button" data-cap="Roll-up, version 2 : nouilles sautées, bao, takoyaki, plateau mixte." aria-label="Agrandir : Roll-up, version 2 : nouilles sautées, bao, takoyaki, plateau mixte."><img src="img/fl-sa-ru1.webp" alt="Roll-up, version 2 : nouilles sautées, bao, takoyaki, plateau mixte." width="596" height="1400" loading="lazy" decoding="async"></button><figcaption>Roll-up, version 2 : nouilles sautées, bao, takoyaki, plateau mixte.</figcaption></figure><figure class="fig" hidden><button class="tile" type="button" data-cap="Roll-up, version 3 : avec le poulet frit japonais." aria-label="Agrandir : Roll-up, version 3 : avec le poulet frit japonais."><img src="img/fl-sa-ru2.webp" alt="Roll-up, version 3 : avec le poulet frit japonais." width="596" height="1400" loading="lazy" decoding="async"></button><figcaption>Roll-up, version 3 : avec le poulet frit japonais.</figcaption></figure></div><div class="more"><button class="btn ghost" type="button" data-gal="g-fl-vietway-sale">Voir les 6 autres visuels ↓</button></div>
+</section><section class="wrap client" id="vietway-sucre" data-a>
+  <div class="client-head">
+    <div><p class="mono" style="color:var(--tint)">Client 02 · Foire de France</p><h2>Vietway<span class="serif">Comptoir Taiyaki &amp; Bubble Waffle</span></h2></div>
+    <div class="client-body"><p>Pour le comptoir sucré du même salon, une identité plus douce : fond clair, fleurs de cerisier, typographie jaune et rouge, en français et en anglais pour les visiteurs étrangers.</p><p class="mono">Ce que j’ai livré</p><ul class="bul"><li>2 affiches A1</li><li>2 roll-ups bilingues</li><li>Bannières haute et basse du comptoir</li></ul></div>
+  </div>
+  <div class="gal" id="g-fl-vietway-sucre" data-set><figure class="fig"><button class="tile" type="button" data-cap="Affiche A1 Taiyaki : versions sucrée et salée, choix des garnitures." aria-label="Agrandir : Affiche A1 Taiyaki : versions sucrée et salée, choix des garnitures."><img src="img/fl-sw-a1t.webp" alt="Affiche A1 Taiyaki : versions sucrée et salée, choix des garnitures." width="989" height="1400" loading="lazy" decoding="async"></button><figcaption>Affiche A1 Taiyaki : versions sucrée et salée, choix des garnitures.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Affiche A1 Bubble Waffle : gaufre nature et gaufre glacée." aria-label="Agrandir : Affiche A1 Bubble Waffle : gaufre nature et gaufre glacée."><img src="img/fl-sw-a1w.webp" alt="Affiche A1 Bubble Waffle : gaufre nature et gaufre glacée." width="989" height="1400" loading="lazy" decoding="async"></button><figcaption>Affiche A1 Bubble Waffle : gaufre nature et gaufre glacée.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Roll-up Taiyaki en français et en anglais, avec les prix." aria-label="Agrandir : Roll-up Taiyaki en français et en anglais, avec les prix."><img src="img/fl-sw-rut.webp" alt="Roll-up Taiyaki en français et en anglais, avec les prix." width="596" height="1400" loading="lazy" decoding="async"></button><figcaption>Roll-up Taiyaki en français et en anglais, avec les prix.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Roll-up Bubble Waffle en français et en anglais, avec les étapes de commande." aria-label="Agrandir : Roll-up Bubble Waffle en français et en anglais, avec les étapes de commande."><img src="img/fl-sw-ruw.webp" alt="Roll-up Bubble Waffle en français et en anglais, avec les étapes de commande." width="596" height="1400" loading="lazy" decoding="async"></button><figcaption>Roll-up Bubble Waffle en français et en anglais, avec les étapes de commande.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Bannière haute du comptoir." aria-label="Agrandir : Bannière haute du comptoir."><img src="img/fl-sw-b1.webp" alt="Bannière haute du comptoir." width="1800" height="601" loading="lazy" decoding="async"></button><figcaption>Bannière haute du comptoir.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Bannière basse du comptoir." aria-label="Agrandir : Bannière basse du comptoir."><img src="img/fl-sw-b2.webp" alt="Bannière basse du comptoir." width="1800" height="601" loading="lazy" decoding="async"></button><figcaption>Bannière basse du comptoir.</figcaption></figure></div>
+</section><section class="wrap client" id="leclerc" data-a>
+  <div class="client-head">
+    <div><p class="mono" style="color:var(--tint)">Client 03 · Luçon</p><h2>Vietinnovation × E.Leclerc<span class="serif">Corner Sushi Bento</span></h2></div>
+    <div class="client-body"><p>Vietinnovation exploite un corner de sushis dans le supermarché E.Leclerc de Luçon. Les visuels devaient attirer l’œil dans les allées et annoncer les offres du mois.</p><p class="mono">Ce que j’ai livré</p><ul class="bul"><li>Flyer A4 et bannière « Box de Novembre »</li><li>Affiches « Menu 17 pièces » et « Menu Party »</li><li>2 bannières de Noël</li></ul></div>
+  </div>
+  <div class="gal" id="g-fl-leclerc" data-set><figure class="fig"><button class="tile" type="button" data-cap="Flyer A4 « Box de Novembre » : -10 % sur le menu Xuka." aria-label="Agrandir : Flyer A4 « Box de Novembre » : -10 % sur le menu Xuka."><img src="img/fl-lc-box.webp" alt="Flyer A4 « Box de Novembre » : -10 % sur le menu Xuka." width="990" height="1400" loading="lazy" decoding="async"></button><figcaption>Flyer A4 « Box de Novembre » : -10 % sur le menu Xuka.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Affiche « Menu 17 pièces » à 17,49 €, avec le détail des pièces." aria-label="Agrandir : Affiche « Menu 17 pièces » à 17,49 €, avec le détail des pièces."><img src="img/fl-lc-17.webp" alt="Affiche « Menu 17 pièces » à 17,49 €, avec le détail des pièces." width="990" height="1400" loading="lazy" decoding="async"></button><figcaption>Affiche « Menu 17 pièces » à 17,49 €, avec le détail des pièces.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Affiche « Nouveau produit : Menu Party »." aria-label="Agrandir : Affiche « Nouveau produit : Menu Party »."><img src="img/fl-lc-nouveau.webp" alt="Affiche « Nouveau produit : Menu Party »." width="990" height="1400" loading="lazy" decoding="async"></button><figcaption>Affiche « Nouveau produit : Menu Party ».</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Bannière linéaire « Box de Novembre » pour le rayon." aria-label="Agrandir : Bannière linéaire « Box de Novembre » pour le rayon."><img src="img/fl-lc-long.webp" alt="Bannière linéaire « Box de Novembre » pour le rayon." width="1800" height="185" loading="lazy" decoding="async"></button><figcaption>Bannière linéaire « Box de Novembre » pour le rayon.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Bannière « Joyeux Noël », version 1." aria-label="Agrandir : Bannière « Joyeux Noël », version 1."><img src="img/fl-lc-noel1.webp" alt="Bannière « Joyeux Noël », version 1." width="1800" height="192" loading="lazy" decoding="async"></button><figcaption>Bannière « Joyeux Noël », version 1.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Bannière « Joyeux Noël », version 2." aria-label="Agrandir : Bannière « Joyeux Noël », version 2."><img src="img/fl-lc-noel2.webp" alt="Bannière « Joyeux Noël », version 2." width="1800" height="192" loading="lazy" decoding="async"></button><figcaption>Bannière « Joyeux Noël », version 2.</figcaption></figure></div>
+</section><section class="wrap client" id="aix" data-a>
+  <div class="client-head">
+    <div><p class="mono" style="color:var(--tint)">Client 04 · Aix-en-Provence</p><h2>Comptoir japonais<span class="serif">Menus « Japan Food Weekly »</span></h2></div>
+    <div class="client-body"><p>Pour un comptoir de cuisine japonaise à Aix-en-Provence, un menu lisible d’un coup d’œil : plats illustrés, boissons, et une ambiance de fête asiatique.</p><p class="mono">Ce que j’ai livré</p><ul class="bul"><li>3 déclinaisons du menu</li></ul></div>
+  </div>
+  <div class="gal" id="g-fl-aix" data-set><figure class="fig"><button class="tile" type="button" data-cap="Menu « Japan Food Weekly », version noire avec boissons." aria-label="Agrandir : Menu « Japan Food Weekly », version noire avec boissons."><img src="img/fl-aix-1.webp" alt="Menu « Japan Food Weekly », version noire avec boissons." width="993" height="1400" loading="lazy" decoding="async"></button><figcaption>Menu « Japan Food Weekly », version noire avec boissons.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Menu, version rouge." aria-label="Agrandir : Menu, version rouge."><img src="img/fl-aix-2.webp" alt="Menu, version rouge." width="993" height="1400" loading="lazy" decoding="async"></button><figcaption>Menu, version rouge.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Menu final du comptoir, version rouge." aria-label="Agrandir : Menu final du comptoir, version rouge."><img src="img/fl-aix-3.webp" alt="Menu final du comptoir, version rouge." width="995" height="1400" loading="lazy" decoding="async"></button><figcaption>Menu final du comptoir, version rouge.</figcaption></figure></div>
+</section><section class="wrap client" id="komi" data-a>
+  <div class="client-head">
+    <div><p class="mono" style="color:var(--tint)">Client 05 · Salon de thé, France</p><h2>Thé by KO-MI<span class="serif">Menus des boissons et des toppings</span></h2></div>
+    <div class="client-body"><p>Un salon de thé aux perles qui voulait des menus en harmonie avec son univers : doux, lisibles et élégants.</p><p class="mono">Ce que j’ai livré</p><ul class="bul"><li>Menu des boissons</li><li>Carte des toppings</li></ul><div class="feedback"><span class="mono">Retour client</span>Le client a apprécié les couleurs et les idées que j’ai proposées.</div></div>
+  </div>
+  <div class="gal" id="g-fl-komi" data-set><figure class="fig"><button class="tile" type="button" data-cap="Menu des boissons : thés, thés au lait, cafés, avec photos." aria-label="Agrandir : Menu des boissons : thés, thés au lait, cafés, avec photos."><img src="img/fl-komi-1.webp" alt="Menu des boissons : thés, thés au lait, cafés, avec photos." width="989" height="1400" loading="lazy" decoding="async"></button><figcaption>Menu des boissons : thés, thés au lait, cafés, avec photos.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Carte des toppings : perles de tapioca, gelées, popping boba, avec les prix." aria-label="Agrandir : Carte des toppings : perles de tapioca, gelées, popping boba, avec les prix."><img src="img/fl-komi-2.webp" alt="Carte des toppings : perles de tapioca, gelées, popping boba, avec les prix." width="989" height="1400" loading="lazy" decoding="async"></button><figcaption>Carte des toppings : perles de tapioca, gelées, popping boba, avec les prix.</figcaption></figure></div>
+</section><section class="wrap client" id="tarot" data-a>
+  <div class="client-head">
+    <div><p class="mono" style="color:var(--tint)">Client 06 · Vietnam</p><h2>La Clé Tarot &amp; Tiệm Hoa Lạ<span class="serif">Identités visuelles</span></h2></div>
+    <div class="client-body"><p>La Clé Tarot est un projet en ligne que j’ai cofondé avec une amie, aujourd’hui clôturé : j’en ai créé toute l’identité. En parallèle, j’ai dessiné le logo de Tiệm Hoa Lạ, une boutique de fleurs au Vietnam.</p><p class="mono">Ce que j’ai livré</p><ul class="bul"><li>Logo et couverture La Clé Tarot</li><li>Menus en VND et en euros</li><li>Bon cadeau</li><li>Logo Tiệm Hoa Lạ</li></ul><div class="feedback"><span class="mono">Retour client</span>Tiệm Hoa Lạ a apprécié la rapidité de création, un prix jugé raisonnable et une collaboration agréable.</div></div>
+  </div>
+  <div class="gal" id="g-fl-tarot" data-set><figure class="fig"><button class="tile" type="button" data-cap="Logo La Clé Tarot : une clé dorée stylisée dans un cercle." aria-label="Agrandir : Logo La Clé Tarot : une clé dorée stylisée dans un cercle."><img src="img/fl-tarot-logo.webp" alt="Logo La Clé Tarot : une clé dorée stylisée dans un cercle." width="1280" height="1024" loading="lazy" decoding="async"></button><figcaption>Logo La Clé Tarot : une clé dorée stylisée dans un cercle.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Image de couverture pour les réseaux sociaux." aria-label="Agrandir : Image de couverture pour les réseaux sociaux."><img src="img/fl-tarot-cover.webp" alt="Image de couverture pour les réseaux sociaux." width="1280" height="910" loading="lazy" decoding="async"></button><figcaption>Image de couverture pour les réseaux sociaux.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Visuel d’ambiance avec le logo." aria-label="Agrandir : Visuel d’ambiance avec le logo."><img src="img/fl-tarot-ambiance.webp" alt="Visuel d’ambiance avec le logo." width="1400" height="935" loading="lazy" decoding="async"></button><figcaption>Visuel d’ambiance avec le logo.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Menu des tirages, en VND et en euros." aria-label="Agrandir : Menu des tirages, en VND et en euros."><img src="img/fl-tarot-menu.webp" alt="Menu des tirages, en VND et en euros." width="1079" height="1400" loading="lazy" decoding="async"></button><figcaption>Menu des tirages, en VND et en euros.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Menu des tirages en ligne, en euros." aria-label="Agrandir : Menu des tirages en ligne, en euros."><img src="img/fl-tarot-menu-eu.webp" alt="Menu des tirages en ligne, en euros." width="933" height="1400" loading="lazy" decoding="async"></button><figcaption>Menu des tirages en ligne, en euros.</figcaption></figure><figure class="fig"><button class="tile" type="button" data-cap="Menu des séances en présentiel." aria-label="Agrandir : Menu des séances en présentiel."><img src="img/fl-tarot-off.webp" alt="Menu des séances en présentiel." width="933" height="1400" loading="lazy" decoding="async"></button><figcaption>Menu des séances en présentiel.</figcaption></figure><figure class="fig" hidden><button class="tile" type="button" data-cap="Bon cadeau La Clé Tarot." aria-label="Agrandir : Bon cadeau La Clé Tarot."><img src="img/fl-tarot-voucher.webp" alt="Bon cadeau La Clé Tarot." width="1400" height="655" loading="lazy" decoding="async"></button><figcaption>Bon cadeau La Clé Tarot.</figcaption></figure><figure class="fig" hidden><button class="tile" type="button" data-cap="Logo de la boutique de fleurs Tiệm Hoa Lạ." aria-label="Agrandir : Logo de la boutique de fleurs Tiệm Hoa Lạ."><img src="img/fl-hoala.webp" alt="Logo de la boutique de fleurs Tiệm Hoa Lạ." width="500" height="500" loading="lazy" decoding="async"></button><figcaption>Logo de la boutique de fleurs Tiệm Hoa Lạ.</figcaption></figure></div><div class="more"><button class="btn ghost" type="button" data-gal="g-fl-tarot">Voir les 2 autres visuels ↓</button></div>
+</section><section class="wrap"><a class="next" href="sushi-2-go.html#top"><p class="mono">Retour aux projets</p><h2>Sushi 2 Go <span class="serif">de zéro à l’ouverture.</span></h2><span class="arrow" aria-hidden="true">→</span></a></section>
+</main>
+<footer><div class="wrap"><p class="mono">Duc Kien (Kevin) Nguyen · Portfolio 2026</p><a class="btn ghost" href="index.html#projets" data-back>← Tous les projets</a></div></footer>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Visuel agrandi">
+  <div class="lb-top"><span class="mono" id="lb-n"></span><button type="button" class="lb-btn" id="lb-close">Fermer ✕</button></div>
+  <div class="lb-stage"><img id="lb-img" alt=""><button type="button" class="lb-nav prev" id="lb-prev" aria-label="Visuel précédent">←</button><button type="button" class="lb-nav next" id="lb-next" aria-label="Visuel suivant">→</button></div>
+  <p class="lb-cap" id="lb-cap"></p>
+</div>
+
+<script>
+(function(){
+  try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(err){}
+  function toTop(){if(!location.hash||location.hash==='#top')window.scrollTo(0,0)}
+  toTop();addEventListener('pageshow',toTop);addEventListener('load',toTop);
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,root=document.documentElement;
+  if(!reduce && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.remove('pending');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:0.02});
+    document.querySelectorAll('[data-a]').forEach(function(el){if(el.getBoundingClientRect().top>innerHeight*0.92){el.classList.add('pending');io.observe(el)}});
+  }
+  addEventListener('scroll',function(){var m=root.scrollHeight-innerHeight;root.style.setProperty('--sp',m>0?scrollY/m:0)},{passive:true});
+  document.querySelectorAll('.more button').forEach(function(b){b.addEventListener('click',function(){
+    document.getElementById(b.dataset.gal).querySelectorAll('[hidden]').forEach(function(t){t.hidden=false});b.parentNode.remove();})});
+  var lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-cap'),ln=document.getElementById('lb-n'),set=[],cur=0,last=null;
+  function show(i){cur=(i+set.length)%set.length;var it=set[cur];li.src=it.src;li.alt=it.cap;lc.textContent=it.cap;ln.textContent=(cur+1)+' / '+set.length;li.style.animation='none';void li.offsetWidth;li.style.animation=''}
+  function open(items,i,from){set=items;last=from;lb.hidden=false;root.style.overflow='hidden';show(i);document.getElementById('lb-close').focus()}
+  function close(){lb.hidden=true;root.style.overflow='';li.removeAttribute('src');if(last)last.focus()}
+  document.querySelectorAll('.tile').forEach(function(t){t.addEventListener('click',function(){
+    var box=t.closest('[data-set]');var tiles=[].slice.call(box.querySelectorAll('.tile'));
+    open(tiles.map(function(x){var im=x.querySelector('img');return{src:im.getAttribute('src'),cap:x.dataset.cap}}),tiles.indexOf(t),t)})});
+  document.getElementById('lb-close').addEventListener('click',close);
+  document.getElementById('lb-prev').addEventListener('click',function(){show(cur-1)});
+  document.getElementById('lb-next').addEventListener('click',function(){show(cur+1)});
+  lb.addEventListener('click',function(x){if(x.target===lb||x.target.classList.contains('lb-stage'))close()});
+  addEventListener('keydown',function(x){if(lb.hidden)return;if(x.key==='Escape')close();if(x.key==='ArrowLeft')show(cur-1);if(x.key==='ArrowRight')show(cur+1)});
+  var sx=null;lb.addEventListener('touchstart',function(x){sx=x.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(x){if(sx===null)return;var d=x.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(cur+(d<0?1:-1));sx=null});
+  // back to portfolio: prefer history when coming from it
+  document.querySelectorAll('[data-back]').forEach(function(a){a.addEventListener('click',function(x){
+    try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){x.preventDefault();history.back()}}catch(err){}
+  })});
+})();
+</script>
+</body>
+</html>

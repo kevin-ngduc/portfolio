@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kevin Nguyen – Assistant Marketing en alternance</title>
+<link rel="canonical" href="https://kevin-nguyen.me/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kevin Nguyen – Portfolio">
+<meta property="og:title" content="Kevin Nguyen – Assistant Marketing en alternance">
+<meta property="og:description" content="+50 % de CA en 2 mois · 4 000+ abonnés Instagram · 9 marques en 6 ans. Master 2 Sup de Pub, alternance 12 mois, disponible dès maintenant en Île-de-France.">
+<meta property="og:url" content="https://kevin-nguyen.me/">
+<meta property="og:image" content="https://kevin-nguyen.me/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="Kevin Nguyen, Assistant Marketing en alternance">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Duc Kien (Kevin) Nguyen">
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Duc Kien (Kevin) Nguyen, marketing digital, branding et social media. Recherche une alternance d’assistant marketing en Île-de-France dès maintenant.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: "after-hours studio" — warm black, ivory type, champagne accent.
+   Condensed poster caps + italic serif overlays (echoes Kevin's own Canva signature), brand-tinted chapters,
+   pinned hero that recedes, image marquee, horizontal freelance reel. Single dark look by choice. */
+:root{
+  --bg:#0D0C0A; --surface:#17150F; --surface-2:#211E17; --line:#302B22;
+  --fg:#F3EEE4; --muted:#A49C8D; --gold:#D9B36C; --gold-ink:#16120A; --good:#7FD1A6;
+  --tint:#D9B36C;
+  --f-poster:"Anton","Impact","Arial Narrow",sans-serif;
+  --f-serif:"Instrument Serif","Times New Roman",Georgia,serif;
+  --f-body:"Manrope","Segoe UI",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --r:18px; --max:1240px; --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{overflow-x:clip}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+h1,h2,h3,h4{margin:0;font-weight:400;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.serif{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:0;text-transform:none}
+.poster{font-family:var(--f-poster);text-transform:uppercase;letter-spacing:.005em;line-height:.9}
+
+/* grain + ambient tint */
+.ambient{position:fixed;inset:0;z-index:-1;pointer-events:none;background:var(--bg)}
+.ambient::before{content:"";position:absolute;width:70vmax;height:70vmax;right:-25vmax;top:-30vmax;border-radius:50%;filter:blur(110px);opacity:.16;background:var(--tint);transition:background-color 1.2s var(--ease)}
+.ambient::after{content:"";position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.progress{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:2px;z-index:70;background:var(--tint);transform-origin:0 50%;transform:scaleX(var(--sp,0));transition:background-color .8s}
+
+/* curtain intro */
+.curtain{position:fixed;inset:0;z-index:90;background:var(--gold);display:grid;place-items:center;pointer-events:none;transform:translateY(-101%)}
+.curtain span{font-family:var(--f-poster);font-size:clamp(3rem,12vw,9rem);color:var(--gold-ink);letter-spacing:.02em}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 76%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:13px}
+.brand{text-decoration:none;display:flex;align-items:baseline;gap:8px;white-space:nowrap}
+.brand b{font-family:var(--f-poster);font-weight:400;font-size:1.25rem;letter-spacing:.03em}
+.brand i{font-family:var(--f-serif);font-size:1.1rem;color:var(--gold)}
+.links{display:flex;gap:22px;align-items:center}
+.links a{text-decoration:none;font-size:.88rem;color:var(--muted);font-weight:600;transition:color .2s;white-space:nowrap}
+.links a:hover{color:var(--fg)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:999px;font-weight:700;font-size:.92rem;text-decoration:none;border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer;white-space:nowrap;transition:transform .25s var(--ease),border-color .25s,background .25s,color .25s}
+.btn:hover{border-color:var(--gold);transform:translateY(-2px)}
+.btn.gold{background:var(--gold);color:var(--gold-ink);border-color:var(--gold)}
+.btn.gold:hover{background:var(--fg);border-color:var(--fg)}
+@media (max-width:900px){.links a.hide-sm{display:none}}
+@media (max-width:480px){.links a.hide-xs{display:none}.btn{padding:10px 16px}.brand i{display:none}.links .btn{padding:9px 14px;font-size:.85rem}}
+
+/* ===== HERO ===== */
+.hero{position:relative;z-index:0;overflow:hidden}
+.hero-in{transform-origin:50% 0;transform:translateY(calc(var(--hp,0) * -70px)) scale(calc(1 - var(--hp,0) * .08));opacity:calc(1 - var(--hp,0) * 1.15);filter:blur(calc(var(--hp,0) * 8px))}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:36px;align-items:center;padding-block:36px 28px}
+.hero-text{min-width:0}
+.status{display:inline-flex;align-items:center;gap:10px;padding:7px 15px 7px 11px;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-size:.84rem;font-weight:600;max-width:100%}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--good);flex:none;animation:pulse 2.2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--good) 60%,transparent)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.headline{margin-top:20px;font-size:clamp(3.2rem,8.4vw,7.8rem)}
+.headline .ln{display:block;overflow:hidden;padding-bottom:.02em}
+.headline .ln > span{display:inline-block}
+.headline .serif{color:var(--gold);font-size:1.02em;line-height:.8;padding-right:.08em}
+.hero-sub{margin-top:22px;max-width:56ch;font-size:clamp(1rem,1.5vw,1.12rem);color:var(--fg);opacity:.86}
+.hero-sub b{color:var(--fg);opacity:1}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+.card-photo{position:relative;justify-self:center;width:100%;max-width:310px;rotate:3deg}
+.card-photo .frame{background:#F3EEE4;padding:12px 12px 52px;border-radius:6px;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.card-photo .frame img{border-radius:2px;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;width:100%}
+.card-photo .frame p{position:absolute;left:0;right:0;bottom:14px;text-align:center;font-family:var(--f-serif);font-style:italic;font-size:1.35rem;color:#1A1712}
+.sticker{position:absolute;padding:8px 13px;border-radius:10px;font-family:var(--f-mono);font-size:.7rem;line-height:1.25;rotate:-6deg;box-shadow:0 14px 30px rgba(0,0,0,.4);text-transform:uppercase;letter-spacing:.05em}
+.sticker b{display:block;font-family:var(--f-poster);font-weight:400;font-size:1.6rem;letter-spacing:.01em}
+.sticker.s1{left:-14%;top:12%;background:var(--gold);color:var(--gold-ink)}
+.sticker.s2{right:-10%;bottom:20%;background:var(--surface-2);color:var(--fg);border:1px solid var(--line);rotate:5deg}
+.badge{position:absolute;right:-14%;top:-8%;width:118px;height:118px}
+.badge svg{width:100%;height:100%;animation:spin 16s linear infinite}
+.badge text{font-family:var(--f-mono);font-size:10.4px;letter-spacing:2.2px;fill:var(--fg);text-transform:uppercase}
+.badge .core{position:absolute;inset:36px;border-radius:50%;background:var(--gold);color:var(--gold-ink);display:grid;place-items:center;font-size:1.3rem;font-weight:800}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.proof{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.proof div{padding:18px 20px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.proof div:first-child{border-left:0;padding-left:0}
+.proof b{font-family:var(--f-poster);font-weight:400;font-size:clamp(2rem,4.2vw,3.3rem);line-height:1;font-variant-numeric:tabular-nums}
+.proof b small{font-size:.5em;color:var(--gold);margin-left:2px}
+.proof span{font-size:.84rem;color:var(--muted);line-height:1.4}
+.proof b span{font-size:inherit;color:inherit;line-height:inherit}
+
+.marquee{display:flex;flex-direction:column;gap:12px;padding-block:22px 26px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq-row{display:flex;gap:12px;width:max-content;animation:mq 60s linear infinite}
+.mq-row.rev{animation-direction:reverse;animation-duration:70s}
+.mq-row img{width:150px;height:150px;border-radius:12px;object-fit:cover;flex:none;border:1px solid var(--line)}
+.marquee:hover .mq-row{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;padding-block:32px 24px;gap:44px}
+  .card-photo{max-width:260px;margin-right:30px}
+  .sticker.s1{left:-18%}.sticker.s2{right:-16%}
+  .badge{width:96px;height:96px;right:-18%}.badge .core{inset:29px;font-size:1.1rem}
+  .proof{grid-template-columns:1fr 1fr}
+  .proof div{border-left:0;padding-left:0;border-top:1px solid var(--line)}
+  .proof div:nth-child(-n+2){border-top:0}
+  .proof div:nth-child(even){border-left:1px solid var(--line);padding-left:16px}
+  .mq-row img{width:110px;height:110px}
+}
+@media (min-width:901px) and (min-height:700px){.hero{position:sticky;top:0}}
+
+/* sheet slides over hero */
+.sheet{position:relative;z-index:1;background:var(--bg);border-radius:34px 34px 0 0;box-shadow:0 -40px 90px rgba(0,0,0,.55);border-top:1px solid var(--line)}
+section{padding-block:120px;position:relative}
+@media (max-width:760px){section{padding-block:76px}}
+.kicker{display:flex;align-items:center;gap:14px}
+.kicker::before{content:"";width:34px;height:1px;background:var(--tint)}
+.kicker .mono{color:var(--tint)}
+.big{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.6rem,7vw,5.6rem);line-height:.92;margin-top:16px}
+.big .serif{color:var(--tint);font-size:1.04em}
+.lead{max-width:60ch;color:var(--muted);margin-top:18px;font-size:1.05rem}
+
+/* ===== missions ===== */
+.missions{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:54px}
+.mission{background:var(--bg);padding:30px 28px 28px;display:flex;flex-direction:column;gap:14px;position:relative;transition:background .35s}
+.mission:hover{background:var(--surface)}
+.mission .no{font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+.mission h3{font-family:var(--f-body);font-weight:800;font-size:1.12rem;letter-spacing:-.01em}
+.mission .stat{font-family:var(--f-poster);font-size:2.2rem;line-height:1;color:var(--gold)}
+.mission .stat .serif{color:var(--fg);font-size:1.05em}
+.mission p{font-size:.93rem;color:var(--muted)}
+.mission .tools{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px;padding-top:8px}
+.chip{font-size:.76rem;font-weight:600;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--surface);white-space:nowrap}
+.langs{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between;margin-top:22px;padding:20px 26px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.langs p{font-size:.95rem}
+.langs .serif{font-size:1.3rem;color:var(--gold)}
+@media (max-width:960px){.missions{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.missions{grid-template-columns:1fr}}
+
+/* ===== alternance ===== */
+.rhythm{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:46px}
+.facts{display:grid;gap:10px;margin-top:24px}
+.fact{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);padding-top:10px;font-size:.95rem}
+.fact span:first-child{color:var(--muted)}
+.fact span:last-child{font-weight:700;text-align:right}
+.cal{min-width:0}
+.weeks{display:grid;grid-template-columns:repeat(9,1fr);gap:6px}
+.wk{height:90px;border-radius:9px;display:flex;align-items:flex-end;padding:8px;font-family:var(--f-mono);font-size:.68rem;transform-origin:bottom}
+.wk.s{background:var(--surface-2);border:1px solid var(--line);color:var(--muted)}
+.wk.c{background:var(--gold);color:var(--gold-ink);font-weight:500}
+.legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px;font-size:.88rem}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{width:14px;height:14px;border-radius:4px}
+.cal-note{margin-top:16px;color:var(--muted);font-size:.92rem;max-width:52ch}
+@media (max-width:900px){.rhythm{grid-template-columns:1fr;padding:28px 20px;gap:30px}.wk{height:58px;padding:5px;font-size:.58rem}}
+
+/* ===== chapters ===== */
+.chapter{border-top:1px solid var(--line)}
+.ch-head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}
+.ch-no{font-family:var(--f-poster);font-size:clamp(5rem,14vw,12rem);line-height:.8;color:transparent;-webkit-text-stroke:1px color-mix(in srgb,var(--tint) 70%,transparent)}
+.ch-title{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(3rem,9.5vw,8.4rem);line-height:.88;margin-top:14px}
+.ch-title .serif{color:var(--tint);font-size:1.02em}
+.ch-body{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;margin-top:46px;align-items:start}
+.ch-body > *{min-width:0}
+.ch-story{display:flex;flex-direction:column;gap:16px;font-size:1.02rem}
+.ch-story p{opacity:.88}
+.ch-side{display:flex;flex-direction:column;gap:18px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.kpi{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--surface);display:flex;flex-direction:column;gap:4px}
+.kpi b{font-family:var(--f-poster);font-weight:400;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1;color:var(--tint);font-variant-numeric:tabular-nums}
+.kpi span{font-size:.8rem;color:var(--muted);line-height:1.35}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-size:.92rem;border-top:1px solid var(--line);padding-top:16px}
+.meta dt{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.meta dd{margin:0;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+@media (max-width:900px){.ch-head{grid-template-columns:1fr}.ch-no{display:none}.ch-body{grid-template-columns:1fr;gap:30px}}
+@media (max-width:520px){.kpis{grid-template-columns:1fr 1fr}.kpis .kpi:last-child{grid-column:span 2}}
+
+/* galleries */
+.wides{display:flex;flex-direction:column;gap:14px;margin-top:56px}
+.gal{columns:4 240px;column-gap:14px;margin-top:14px}
+.gal .tile{break-inside:avoid;margin-bottom:14px}
+.tile{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface);cursor:zoom-in;position:relative}
+.tile img{width:100%;transition:transform .8s var(--ease),filter .5s}
+.tile:hover img{transform:scale(1.04)}
+.tile::after{content:"＋";position:absolute;right:10px;top:10px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:rgba(13,12,10,.78);color:#F3EEE4;font-size:.95rem;opacity:0;transform:scale(.6);transition:.3s var(--ease)}
+.tile:hover::after,.tile:focus-visible::after{opacity:1;transform:none}
+.more{display:flex;justify-content:center;margin-top:10px}
+.strip-wrap{margin-top:40px}
+.strip-head{display:flex;justify-content:space-between;align-items:end;gap:14px;flex-wrap:wrap;margin-bottom:14px}
+.strip-head h4{font-family:var(--f-serif);font-style:italic;font-size:1.7rem}
+.strip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.strip .tile{flex:none;width:auto;scroll-snap-align:start}
+.strip .tile img{height:300px;width:auto;max-width:none}
+@media (max-width:620px){.strip .tile img{height:220px}.gal{columns:2 140px;column-gap:10px}.gal .tile{margin-bottom:10px}}
+
+/* ===== freelance reel ===== */
+.reel-pin{position:sticky;top:0;height:100vh;height:100dvh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;gap:26px;padding-top:56px}
+.reel-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
+.reel-count{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.reel-count b{color:var(--fg);font-family:var(--f-poster);font-weight:400;font-size:2rem}
+.track{display:flex;gap:22px;will-change:transform;width:max-content;padding-left:max(20px,calc((100vw - var(--max)) / 2 + 20px));padding-right:max(20px,calc((100vw - var(--max)) / 2 + 20px))}
+.fcard{width:min(400px,78vw);flex:none;display:flex;flex-direction:column;gap:12px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:14px;transition:transform .5s var(--ease),opacity .5s}
+.fcard .cover{border-radius:10px;overflow:hidden;aspect-ratio:4/5;padding:0;border:0;cursor:zoom-in;background:var(--surface-2);position:relative;width:100%}
+.fcard .cover img{width:100%;height:100%;object-fit:cover;object-position:50% 0;transition:transform .8s var(--ease)}
+.fcard .cover:hover img{transform:scale(1.05)}
+.fcard .cover span{position:absolute;left:10px;bottom:10px;font-family:var(--f-mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;background:rgba(13,12,10,.82);color:#F3EEE4;padding:6px 10px;border-radius:8px}
+.fcard .mono{color:var(--gold)}
+.fcard h3{font-family:var(--f-poster);text-transform:uppercase;font-size:1.7rem;line-height:1}
+.fcard p{font-size:.88rem;color:var(--muted)}
+.reel-bar{height:2px;background:var(--line);border-radius:2px;overflow:hidden}
+.reel-bar i{display:block;height:100%;background:var(--gold);transform-origin:0 50%;transform:scaleX(var(--rp,0))}
+.reel.static .reel-pin{position:static;height:auto;padding-block:20px}
+.reel.static .track-wrap{overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.reel.static .fcard{scroll-snap-align:center}
+@media (max-height:760px){.fcard{width:min(330px,72vw)}.fcard .cover{aspect-ratio:1}}
+
+/* ===== parcours ===== */
+.timeline{border-top:1px solid var(--line);margin-top:50px}
+.job{display:grid;grid-template-columns:210px 1fr;gap:28px;padding-block:28px;border-bottom:1px solid var(--line)}
+.job .when{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);padding-top:5px;font-variant-numeric:tabular-nums}
+.live{display:inline-flex;align-items:center;gap:6px;color:var(--good);margin-top:6px}
+.job h3{font-family:var(--f-body);font-weight:800;font-size:1.2rem}
+.job .org{color:var(--gold);font-weight:600;font-size:.92rem;margin-top:2px}
+.job ul{margin:12px 0 0;padding-left:18px;display:grid;gap:5px;opacity:.86;font-size:.95rem}
+.job > div{min-width:0}
+@media (max-width:700px){.job{grid-template-columns:1fr;gap:6px}}
+
+.edu{display:grid;grid-template-columns:1.45fr 1fr;gap:20px;margin-top:50px}
+.edu-list{border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+.edu-item{display:grid;grid-template-columns:120px 1fr;gap:18px;padding:20px 26px;border-top:1px solid var(--line)}
+.edu-item:first-child{border-top:0}
+.edu-item .mono{padding-top:3px;font-variant-numeric:tabular-nums}
+.edu-item h4{font-family:var(--f-body);font-weight:800;font-size:1rem}
+.edu-item p{color:var(--muted);font-size:.88rem}
+.edu-item.now h4{color:var(--gold)}
+.side-stack{display:flex;flex-direction:column;gap:20px}
+.mini{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:22px 26px;display:flex;flex-direction:column;gap:12px}
+.lang{display:flex;justify-content:space-between;gap:12px;font-size:.95rem;border-top:1px solid var(--line);padding-top:10px}
+.mini .lang:nth-child(2){border-top:0;padding-top:0}
+.lang span:last-child{color:var(--muted)}
+@media (max-width:860px){.edu{grid-template-columns:1fr}.edu-item{grid-template-columns:1fr;gap:4px;padding:18px 20px}}
+
+/* ===== contact ===== */
+.contact{border-top:1px solid var(--line);overflow:hidden}
+.contact-big{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(3.4rem,13vw,12rem);line-height:.86}
+.contact-big .serif{color:var(--gold)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start;margin-top:44px}
+.contact-grid .lead{margin-top:0}
+.rows{display:grid;gap:10px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.row > div{min-width:0}
+.row .v{font-weight:700;overflow-wrap:anywhere;text-decoration:none}
+.row a.v:hover{color:var(--gold)}
+.copy{font-family:var(--f-mono);font-size:.7rem;padding:7px 11px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer;flex:none;text-transform:uppercase;letter-spacing:.05em}
+.copy:hover{border-color:var(--gold)}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+footer{padding-block:26px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+/* ===== lightbox ===== */
+.lb{position:fixed;inset:0;z-index:100;background:#080706;height:100vh;height:100dvh;overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;gap:12px;
+  padding:calc(14px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));animation:fade .25s}
+.lb[hidden]{display:none}
+.lb-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.lb-stage{position:relative;display:flex;align-items:center;justify-content:center;min-height:0;overflow:hidden}
+.lb-stage img{max-height:calc(100vh - 170px);max-height:calc(100dvh - 170px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));max-width:calc(100% - 120px);width:auto;height:auto;object-fit:contain;border-radius:8px;animation:zoomin .35s var(--ease)}
+.lb-cap{text-align:center;color:#D8D1C3;font-size:.92rem;max-width:70ch;margin:0 auto}
+.lb-btn{background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-weight:700;cursor:pointer}
+.lb-nav{position:absolute;top:50%;translate:0 -50%;width:48px;height:48px;border-radius:50%;background:rgba(23,21,15,.85);border:1px solid var(--line);color:var(--fg);font-size:1.3rem;cursor:pointer}
+.lb-nav.prev{left:0}.lb-nav.next{right:0}
+@media (max-width:620px){.lb-stage img{max-width:100%}.lb-nav{top:auto;bottom:6px;translate:none;width:42px;height:42px}}
+@keyframes fade{from{opacity:0}}
+@keyframes zoomin{from{opacity:0;transform:scale(.95)}}
+
+/* ===== motion ===== */
+@media (prefers-reduced-motion: no-preference){
+  .curtain{animation:curtain 1.25s var(--ease) both}
+  .curtain span{animation:curtain-t 1.25s var(--ease) both}
+  @keyframes curtain{0%{transform:none}55%{transform:none}100%{transform:translateY(-101%)}}
+  @keyframes curtain-t{0%{opacity:0;transform:translateY(30px)}30%{opacity:1;transform:none}55%{opacity:1}100%{opacity:0;transform:translateY(-40px)}}
+  .headline .ln > span{animation:lnup 1s var(--ease) both}
+  .headline .ln:nth-child(1) > span{animation-delay:.85s}
+  .headline .ln:nth-child(2) > span{animation-delay:.97s}
+  .headline .ln:nth-child(3) > span{animation-delay:1.09s}
+  @keyframes lnup{from{transform:translateY(105%)}}
+  .status,.hero-sub,.cta,.proof,.marquee{animation:rise .9s var(--ease) both}
+  .status{animation-delay:.75s}.hero-sub{animation-delay:1.2s}.cta{animation-delay:1.3s}.proof{animation-delay:1.4s}.marquee{animation-delay:1.5s}
+  .card-photo{animation:drop 1.2s 1s var(--ease) both}
+  .sticker.s1{animation:pop .7s 1.7s cubic-bezier(.3,1.5,.5,1) both}
+  .sticker.s2{animation:pop .7s 1.85s cubic-bezier(.3,1.5,.5,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(26px)}}
+  @keyframes drop{from{opacity:0;transform:translateY(-40px) rotate(-10deg)}}
+  @keyframes pop{from{opacity:0;transform:scale(.4)}}
+
+  [data-a]{transition:opacity 1s var(--ease),transform 1s var(--ease),filter 1s var(--ease);transition-delay:var(--d,0s)}
+  [data-a].pending{opacity:0}
+  [data-a="up"].pending{transform:translateY(70px)}
+  [data-a="left"].pending{transform:translateX(-80px)}
+  [data-a="zoom"].pending{transform:scale(.9);filter:blur(10px)}
+  [data-a="title"],[data-a="bars"],[data-a="tiles"]{transition:none}
+  .bars[data-a="bars"] i{transition:transform .9s var(--ease);transition-delay:calc(var(--i) * 50ms)}
+  .bars[data-a="bars"].pending i{transform:scaleY(0)}
+  [data-a="title"].pending,[data-a="bars"].pending,[data-a="tiles"].pending{opacity:1}
+  [data-a="title"] .w{display:inline-block;transition:transform 1.1s var(--ease),opacity 1s;transition-delay:calc(var(--i) * 80ms)}
+  [data-a="title"].pending .w{transform:translateY(80%) rotate(5deg);opacity:0}
+  [data-a="bars"] .wk{transition:transform .6s var(--ease),opacity .6s;transition-delay:calc(var(--i) * 60ms)}
+  [data-a="bars"].pending .wk{transform:scaleY(.15);opacity:0}
+  [data-a="tiles"] .tile img{clip-path:inset(0);transition:clip-path 1.1s var(--ease),transform 1.3s var(--ease);transition-delay:calc(var(--i,0) * 70ms)}
+  [data-a="tiles"].pending .tile img{clip-path:inset(0 0 100% 0);transform:scale(1.2)}
+}
+@media (prefers-reduced-motion: reduce){.curtain{display:none}.mq-row,.badge svg{animation:none}}
+
+/* ---- projets à la une ---- */
+.pcards{display:flex;flex-direction:column;gap:22px;margin-top:50px}
+.pcard{display:grid;grid-template-columns:1.1fr 1fr;gap:0;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--surface);text-decoration:none;color:inherit;position:relative;transition:border-color .4s,transform .5s var(--ease)}
+.pcard:hover{border-color:var(--pt);transform:translateY(-4px)}
+.pcard:nth-child(even){grid-template-columns:1fr 1.1fr}
+.pcard:nth-child(even) .pc-media{order:2}
+.pc-media{position:relative;overflow:hidden;aspect-ratio:16/11;background:var(--surface-2)}
+.pc-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s var(--ease)}
+.pcard:hover .pc-media img{transform:scale(1.04)}
+.pc-text{padding:34px 36px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.pc-text .mono{color:var(--pt)}
+.pc-text h3{font-family:var(--f-poster);text-transform:uppercase;font-size:clamp(2.4rem,4.6vw,3.8rem);line-height:.92}
+.pc-text h3 .serif{display:block;color:var(--pt);font-size:.62em;line-height:1.05}
+.pc-text p{color:var(--muted)}
+.pc-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:4px}
+.pc-kpis div{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:2px}
+.pc-kpis b{font-family:var(--f-poster);font-weight:400;font-size:1.55rem;line-height:1;color:var(--fg)}
+.pc-kpis span{font-size:.74rem;color:var(--muted);line-height:1.3}
+.pc-cta{margin-top:auto;display:inline-flex;align-items:center;gap:10px;font-weight:800;padding-top:10px}
+.pc-cta i{font-style:normal;display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--pt);color:#0D0C0A;transition:transform .4s var(--ease)}
+.pcard:hover .pc-cta i{transform:translateX(6px) rotate(-45deg)}
+@media (max-width:900px){.pcard,.pcard:nth-child(even){grid-template-columns:1fr}.pcard:nth-child(even) .pc-media{order:0}.pc-text{padding:24px 22px}}
+@media (max-width:420px){.pc-kpis{grid-template-columns:1fr 1fr}.pc-kpis div:last-child{grid-column:span 2}}
+
+/* ---- à propos ---- */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.about-photo{position:relative;max-width:380px}
+.about-photo img{border-radius:20px;aspect-ratio:4/5;object-fit:cover;width:100%;filter:grayscale(.15)}
+.about-photo .tag{position:absolute;left:-14px;bottom:24px;background:var(--gold);color:var(--gold-ink);padding:10px 14px;border-radius:12px;font-family:var(--f-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;rotate:-4deg}
+.about-photo .tag b{display:block;font-family:var(--f-poster);font-weight:400;font-size:1.5rem;letter-spacing:0}
+.about-text{display:flex;flex-direction:column;gap:16px;font-size:1.05rem;max-width:62ch}
+.about-text p{opacity:.88}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}
+.values div{border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--surface)}
+.values b{display:block;font-family:var(--f-serif);font-style:italic;font-weight:400;font-size:1.35rem;color:var(--gold)}
+.values span{font-size:.86rem;color:var(--muted)}
+@media (max-width:900px){.about{grid-template-columns:1fr;gap:30px}.about-photo{max-width:280px}}
+@media (max-width:560px){.values{grid-template-columns:1fr}}
+
+/* ---- méthode ---- */
+.method{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:50px;border-top:1px solid var(--line)}
+.mstep{padding:24px 20px 10px 0;display:flex;flex-direction:column;gap:10px;position:relative}
+.mstep::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+.mstep .mono{color:var(--gold)}
+.mstep h3{font-family:var(--f-body);font-weight:800;font-size:1.08rem}
+.mstep p{font-size:.92rem;color:var(--muted)}
+.mstep em{font-style:normal;font-size:.8rem;color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:3px 10px;align-self:flex-start;background:var(--surface)}
+@media (max-width:1000px){.method{grid-template-columns:1fr 1fr;row-gap:10px}}
+@media (max-width:560px){.method{grid-template-columns:1fr}}
+
+/* ---- planning ---- */
+.plan{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:40px;display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start}
+.plan-chart{min-width:0}
+.bars{display:grid;grid-template-columns:repeat(12,1fr);gap:8px;align-items:end;height:240px;border-bottom:1px solid var(--line);padding-bottom:0}
+.bar{display:flex;flex-direction:column-reverse;gap:3px;height:100%;justify-content:flex-start}
+.bar i{display:block;border-radius:5px;min-height:2px;transform-origin:bottom}
+.bar .ent{background:var(--gold)}
+.bar .eco{background:var(--surface-2);border:1px solid var(--line)}
+.bar-l{display:grid;grid-template-columns:repeat(12,1fr);gap:8px;margin-top:8px;font-family:var(--f-mono);font-size:.62rem;color:var(--muted);text-align:center;text-transform:uppercase}
+.plan-tot{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+.plan-tot div{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg)}
+.plan-tot b{display:block;font-family:var(--f-poster);font-weight:400;font-size:1.8rem;line-height:1.1}
+.plan-tot span{font-size:.8rem;color:var(--muted)}
+.now{display:inline-flex;align-items:center;gap:10px;background:color-mix(in srgb,var(--good) 14%,transparent);border:1px solid color-mix(in srgb,var(--good) 40%,transparent);color:var(--fg);padding:9px 14px;border-radius:12px;font-weight:700;font-size:.92rem;margin-top:20px}
+@media (max-width:900px){.plan{grid-template-columns:1fr;padding:26px 18px;gap:28px}.bars{height:180px;gap:4px}.bar-l{gap:4px;font-size:.52rem}}
+@media (prefers-reduced-motion: no-preference){
+  .bars i{transition:transform .9s var(--ease);transition-delay:calc(var(--i) * 50ms)}
+  .bars.pending{opacity:1}.bars.pending i{transform:scaleY(0)}
+}
+
+/* ---- FAQ ---- */
+.faq{margin-top:44px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font-weight:800;font-size:1.1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--f-mono);font-size:1.3rem;color:var(--gold);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 22px;max-width:70ch;color:var(--muted)}
+.faq details p b{color:var(--fg)}
+
+.fcard a.cover{cursor:pointer}
+
+/* ---- hero portrait v2 ---- */
+.hero-visual{position:relative;justify-self:center;width:100%;max-width:400px;display:flex;flex-direction:column;align-items:stretch}
+.arch{position:relative;aspect-ratio:4/5;border-radius:999px 999px 26px 26px;overflow:hidden;border:1px solid color-mix(in srgb,var(--gold) 45%,var(--line));
+  background:radial-gradient(120% 80% at 50% 18%,color-mix(in srgb,var(--gold) 38%,transparent),transparent 62%),linear-gradient(180deg,#2A2418,#14120E 75%)}
+.arch::before{content:"";position:absolute;inset:14px;border-radius:999px 999px 18px 18px;border:1px solid color-mix(in srgb,var(--gold) 22%,transparent);pointer-events:none;z-index:1}
+.arch img{position:absolute;left:50%;bottom:0;width:96%;transform:translateX(-50%);height:auto;max-width:none}
+.nameplate{margin-top:-1px;background:var(--surface);border:1px solid var(--line);border-top:0;border-radius:0 0 18px 18px;padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.nameplate b{white-space:nowrap;font-family:var(--f-poster);font-weight:400;font-size:clamp(1rem,3.4vw,1.25rem);letter-spacing:.02em;text-transform:uppercase}
+.nameplate span{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);text-align:right}
+.hchip{position:absolute;display:flex;flex-direction:column;gap:1px;padding:10px 14px;border-radius:14px;background:color-mix(in srgb,var(--bg) 70%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);box-shadow:0 16px 40px rgba(0,0,0,.35);z-index:2}
+.hchip b{font-family:var(--f-poster);font-weight:400;font-size:1.5rem;line-height:1.05;color:var(--gold)}
+.hchip span{font-size:.72rem;color:var(--muted);line-height:1.3}
+.hchip.c1{left:-12%;top:30%}.hchip.c2{right:-10%;top:58%}
+@media (max-width:900px){.hero-visual{max-width:300px}.hchip.c1{left:-6%}.hchip.c2{right:-6%}}
+/* ---- hero CTA v2 ---- */
+.cta{align-items:center}
+.btn-alt{position:relative;display:inline-flex;align-items:center;gap:14px;padding:12px 14px 12px 20px;border-radius:999px;background:var(--gold);color:var(--gold-ink);text-decoration:none;font-weight:800;font-size:1rem;transition:transform .25s var(--ease)}
+.btn-alt small{display:block;font-family:var(--f-mono);font-weight:500;font-size:.64rem;letter-spacing:.07em;text-transform:uppercase;opacity:.75}
+.btn-alt i{font-style:normal;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--gold-ink);color:var(--gold);transition:transform .3s var(--ease)}
+.btn-alt:hover{transform:translateY(-2px)}.btn-alt:hover i{transform:translateY(3px)}
+.btn-about{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;border:1px solid color-mix(in srgb,var(--gold) 60%,var(--line));color:var(--fg);text-decoration:none;font-weight:700;transition:background .25s,transform .25s var(--ease)}
+.btn-about:hover{background:var(--surface-2);transform:translateY(-2px)}
+.btn-link{color:var(--muted);font-weight:700;font-size:.92rem;text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}
+.btn-link:hover{color:var(--fg)}
+@media (prefers-reduced-motion: no-preference){
+  .btn-alt{animation:glow 2.6s 2.2s infinite}
+  @keyframes glow{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--gold) 55%,transparent)}70%{box-shadow:0 0 0 14px transparent}100%{box-shadow:0 0 0 0 transparent}}
+  .hero-visual{animation:rise 1.1s 1s var(--ease) both}
+  .hchip.c1{animation:pop .7s 1.7s cubic-bezier(.3,1.5,.5,1) both}.hchip.c2{animation:pop .7s 1.85s cubic-bezier(.3,1.5,.5,1) both}
+}
+</style>
+<style>body{margin:0}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+
+<div class="ambient" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+<div class="curtain" aria-hidden="true"><span>Kevin Nguyen</span></div>
+
+<nav aria-label="Navigation principale">
+  <div class="wrap">
+    <a class="brand" href="#top"><b>KEVIN NGUYEN</b><i>marketing</i></a>
+    <div class="links">
+      <a href="#atouts" class="hide-sm">Atouts</a><a href="#apropos" class="hide-sm">À propos</a>
+      <a href="#projets" class="hide-xs">Projets</a>
+      <a href="#freelance" class="hide-sm">Freelance</a>
+      <a href="#alternance" class="hide-sm">Alternance</a>
+      <a class="btn gold" href="#contact">Me contacter</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-in">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <div class="status"><span class="dot" aria-hidden="true"></span>Disponible immédiatement · alternance 12 mois · Île-de-France</div>
+        <h1 class="headline poster" aria-label="Des marques qui vendent">
+          <span class="ln"><span>Des marques</span></span>
+          <span class="ln"><span>qui <span class="serif">vendent.</span></span></span>
+        </h1>
+        <p class="hero-sub"><b>Duc Kien (Kevin) Nguyen</b>, 6 ans de marketing entre la France et le Vietnam. Je crée l’identité, je produis les contenus, je lance les campagnes, et je mesure ce qu’elles rapportent.</p>
+        <div class="cta">
+          <a class="btn-alt" href="#alternance"><span><small>Disponible immédiatement</small>Je cherche une alternance</span><i>↓</i></a>
+          <a class="btn-about" href="#apropos">Qui suis-je ?</a>
+          <a class="btn-link" href="#projets">Voir les projets ↓</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="arch"><img src="img/portrait-cut.webp?v=2" alt="Portrait de Duc Kien (Kevin) Nguyen" width="820" height="874"></div>
+        <div class="nameplate"><b>Kevin Nguyen</b><span>Assistant marketing<br>Alternance · Master 2</span></div>
+        <div class="hchip c1"><b>+50 %</b><span>de CA en 2 mois</span></div>
+        <div class="hchip c2"><b>9 marques</b><span>accompagnées en 6 ans</span></div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="proof" aria-label="Chiffres clés">
+        <div><b>+<span data-count="50">50</span><small>%</small></b><span>de chiffre d’affaires en 2 mois, restaurant Hẻm 8</span></div>
+        <div><b><span data-count="4000" data-sep>4 000</span><small>+</small></b><span>abonnés Instagram construits pour ma marque Duckee</span></div>
+        <div><b><span data-count="160">160</span><small>+</small></b><span>visuels publiés, imprimés ou affichés, dans ce portfolio</span></div>
+        <div><b><span data-count="6">6</span><small>ans</small></b><span>d’expérience, dont près de 3 ans en France</span></div>
+      </div>
+    </div>
+    <div class="marquee" aria-hidden="true"><div class="mq-row"><img src="img/mq-s2g-plateau.webp" alt="" width="150" height="150"><img src="img/mq-dk-ba-1.webp" alt="" width="150" height="150"><img src="img/mq-h8-music.webp" alt="" width="150" height="150"><img src="img/mq-ko-fruit-1.webp" alt="" width="150" height="150"><img src="img/mq-s2g-pourquoi.webp" alt="" width="150" height="150"><img src="img/mq-fl-sa-3.webp" alt="" width="150" height="150"><img src="img/mq-dk-logo-2.webp" alt="" width="150" height="150"><img src="img/mq-ko-pinkday.webp" alt="" width="150" height="150"><img src="img/mq-h8-foot.webp" alt="" width="150" height="150"><img src="img/mq-s2g-plateau.webp" alt="" width="150" height="150"><img src="img/mq-dk-ba-1.webp" alt="" width="150" height="150"><img src="img/mq-h8-music.webp" alt="" width="150" height="150"><img src="img/mq-ko-fruit-1.webp" alt="" width="150" height="150"><img src="img/mq-s2g-pourquoi.webp" alt="" width="150" height="150"><img src="img/mq-fl-sa-3.webp" alt="" width="150" height="150"><img src="img/mq-dk-logo-2.webp" alt="" width="150" height="150"><img src="img/mq-ko-pinkday.webp" alt="" width="150" height="150"><img src="img/mq-h8-foot.webp" alt="" width="150" height="150"></div><div class="mq-row rev"><img src="img/mq-s2g-logo-noir.webp" alt="" width="150" height="150"><img src="img/mq-fl-lc-17.webp" alt="" width="150" height="150"><img src="img/mq-dk-ba-4.webp" alt="" width="150" height="150"><img src="img/mq-h8-women.webp" alt="" width="150" height="150"><img src="img/mq-ko-women.webp" alt="" width="150" height="150"><img src="img/mq-fl-tarot-logo.webp" alt="" width="150" height="150"><img src="img/mq-s2g-valeurs.webp" alt="" width="150" height="150"><img src="img/mq-fl-sw-a1t.webp" alt="" width="150" height="150"><img src="img/mq-h8-xala.webp" alt="" width="150" height="150"><img src="img/mq-s2g-logo-noir.webp" alt="" width="150" height="150"><img src="img/mq-fl-lc-17.webp" alt="" width="150" height="150"><img src="img/mq-dk-ba-4.webp" alt="" width="150" height="150"><img src="img/mq-h8-women.webp" alt="" width="150" height="150"><img src="img/mq-ko-women.webp" alt="" width="150" height="150"><img src="img/mq-fl-tarot-logo.webp" alt="" width="150" height="150"><img src="img/mq-s2g-valeurs.webp" alt="" width="150" height="150"><img src="img/mq-fl-sw-a1t.webp" alt="" width="150" height="150"><img src="img/mq-h8-xala.webp" alt="" width="150" height="150"></div></div>
+  </div>
+</header>
+
+<div class="sheet">
+
+  <section id="atouts" data-tint="#D9B36C">
+    <div class="wrap">
+      <div class="kicker" data-a="left"><span class="mono">Ce que j’apporte à votre équipe</span></div>
+      <h2 class="big" data-a="title">Opérationnel <span class="serif">dès</span> le premier jour.</h2>
+      <p class="lead" data-a="up">Les missions d’un assistant marketing en alternance, et la preuve que je les ai déjà menées.</p>
+      <div class="missions">
+        <article class="mission" data-a="up"><span class="no">Social media</span><h3>Réseaux sociaux &amp; community management</h3><p class="stat">4 000+ <span class="serif">abonnés</span></p><p>Ligne éditoriale, séries de posts, avant/après, promotions : une communauté construite sans agence.</p><div class="tools"><span class="chip">Instagram</span><span class="chip">Facebook</span><span class="chip">Meta Business Suite</span></div></article>
+        <article class="mission" data-a="up" style="--d:.08s"><span class="no">Contenu</span><h3>Création de contenus &amp; design</h3><p class="stat">160+ <span class="serif">visuels</span></p><p>Posts, affiches, menus, vidéos courtes : je conçois et je livre, sans dépendre d’un graphiste.</p><div class="tools"><span class="chip">Illustrator</span><span class="chip">Photoshop</span><span class="chip">InDesign</span><span class="chip">Premiere Pro</span><span class="chip">Canva</span><span class="chip">CapCut</span></div></article>
+        <article class="mission" data-a="up" style="--d:.16s"><span class="no">Acquisition</span><h3>Campagnes payantes &amp; suivi des KPI</h3><p class="stat">+50 % <span class="serif">de CA</span></p><p>Campagnes Facebook et Instagram Ads couplées aux actions terrain, et mesurées sur le chiffre d’affaires.</p><div class="tools"><span class="chip">Meta Ads</span><span class="chip">Google Ads</span><span class="chip">Google Analytics</span></div></article>
+        <article class="mission" data-a="up"><span class="no">Trade marketing</span><h3>PLV, salons &amp; points de vente</h3><p class="stat">3 <span class="serif">points de vente</span></p><p>Roll-ups, bannières, menus et affiches pour deux stands à la Foire de France et un corner sushi chez E.Leclerc Luçon.</p><div class="tools"><span class="chip">Roll-up</span><span class="chip">PLV</span><span class="chip">Print</span></div></article>
+        <article class="mission" data-a="up" style="--d:.08s"><span class="no">Branding</span><h3>Lancement &amp; identité de marque</h3><p class="stat">0 → 1</p><p>Sushi 2 Go créé de zéro à Nantes : nom, logo, charte, menu de 16 pages, campagne d’ouverture.</p><div class="tools"><span class="chip">Naming</span><span class="chip">Charte graphique</span><span class="chip">Brand book</span></div></article>
+        <article class="mission" data-a="up" style="--d:.16s"><span class="no">Événementiel</span><h3>Événements &amp; animation commerciale</h3><p class="stat">4 <span class="serif">établissements</span></p><p>Soirées live, retransmissions de matchs, fêtes et anniversaires : un calendrier d’animations pour faire vivre la salle.</p><div class="tools"><span class="chip">Planning</span><span class="chip">Partenaires</span><span class="chip">Terrain</span></div></article>
+      </div>
+      <div class="langs" data-a="up">
+        <p><span class="serif">Trilingue</span> &nbsp;Français · Anglais · Vietnamien</p>
+        <p class="mono">Double culture Europe – Asie</p>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="projets"></div>
+  <section data-tint="#D9B36C" style="padding-top:0">
+    <div class="wrap">
+      <div class="kicker" data-a="left"><span class="mono">Projets à la une</span></div>
+      <h2 class="big" data-a="title">Quatre marques, <span class="serif">quatre résultats.</span></h2>
+      <p class="lead" data-a="up">Chaque projet a sa propre étude de cas : le contexte, mon rôle exact, la démarche, tous les visuels expliqués un par un, et les résultats.</p>
+      <div class="pcards"><a class="pcard" href="sushi-2-go.html#top" style="--pt:#F37A52;--x:#D9532C" data-a="up">
+  <div class="pc-media" aria-hidden="true"><img src="img/cover-sushi.webp" alt="Aperçu des visuels du projet Sushi 2 Go" width="1600" height="1100" loading="lazy" decoding="async"></div>
+  <div class="pc-text"><p class="mono">Projet 01 · Restauration · Nantes · 2024–2025</p><h3>Sushi 2 Go<span class="serif">de zéro à l’ouverture.</span></h3><p>Une marque de restaurant créée de zéro, du nom au menu de 16 pages.</p><div class="pc-kpis"><div><b>16</b><span>pages de menu</span></div><div><b>7</b><span>posts de lancement</span></div><div><b>1er juin</b><span>ouverture 2025</span></div></div><span class="pc-cta">Lire l’étude de cas <i>→</i></span></div>
+</a><a class="pcard" href="hem-8.html#top" style="--pt:#F59A3A;--x:#C76A12" data-a="up">
+  <div class="pc-media" aria-hidden="true"><img src="img/cover-hem8.webp" alt="Aperçu des visuels du projet Hẻm 8" width="1600" height="1100" loading="lazy" decoding="async"></div>
+  <div class="pc-text"><p class="mono">Projet 02 · Restauration · Hanoï · 2022</p><h3>Hẻm 8<span class="serif">relancer après le Covid.</span></h3><p>+50 % de chiffre d’affaires en deux mois, avec moins de 40 € de publicité par mois.</p><div class="pc-kpis"><div><b>+50 %</b><span>de CA en 2 mois</span></div><div><b>&lt; 40 €</b><span>de pub par mois</span></div><div><b>4</b><span>établissements</span></div></div><span class="pc-cta">Lire l’étude de cas <i>→</i></span></div>
+</a><a class="pcard" href="cafe-koem.html#top" style="--pt:#EE6670;--x:#B42335" data-a="up">
+  <div class="pc-media" aria-hidden="true"><img src="img/cover-koem.webp" alt="Aperçu des visuels du projet Café Koem" width="1600" height="1100" loading="lazy" decoding="async"></div>
+  <div class="pc-text"><p class="mono">Projet 03 · Coffee shop · Hanoï · 2022</p><h3>Café Koem<span class="serif">une marque qui donne soif.</span></h3><p>Une série produit reconnaissable et un rendez-vous hebdomadaire, le Pink Day.</p><div class="pc-kpis"><div><b>+5–10 %</b><span>d’interactions / mois</span></div><div><b>38K</b><span>le Pink Day</span></div><div><b>3</b><span>formats</span></div></div><span class="pc-cta">Lire l’étude de cas <i>→</i></span></div>
+</a><a class="pcard" href="duckee.html#top" style="--pt:#EE6FAA;--x:#C2337A" data-a="up">
+  <div class="pc-media" aria-hidden="true"><img src="img/cover-duckee.webp" alt="Aperçu des visuels du projet Duckee" width="1600" height="1100" loading="lazy" decoding="async"></div>
+  <div class="pc-text"><p class="mono">Projet 04 · Ma propre entreprise · Hanoï · 2019–2022</p><h3>Duckee<span class="serif">mon premier business.</span></h3><p>Ma propre entreprise, rentable, portée par Instagram et une série avant / après.</p><div class="pc-kpis"><div><b>4 000+</b><span>abonnés</span></div><div><b>8–10 M</b><span>VND de CA / mois</span></div><div><b>150K</b><span>VND, prix moyen</span></div></div><span class="pc-cta">Lire l’étude de cas <i>→</i></span></div>
+</a></div>
+    </div>
+  </section>
+
+  <section id="apropos" data-tint="#D9B36C">
+    <div class="wrap about">
+      <div class="about-photo" data-a="left"><img src="img/portrait.webp" alt="Duc Kien (Kevin) Nguyen" width="900" height="993" loading="lazy"><div class="tag"><b>DELF B2</b>Français professionnel</div></div>
+      <div class="about-text" data-a="up">
+        <div class="kicker"><span class="mono">À propos</span></div>
+        <h2 class="big" style="font-size:clamp(2.4rem,5.4vw,4.2rem)">Entre <span class="serif">Hanoï</span> et <span class="serif">Paris.</span></h2>
+        <p>Je m’appelle Duc Kien Nguyen, et tout le monde m’appelle Kevin. J’ai lancé ma première marque à Hanoï en 2019, puis j’ai dirigé le marketing de restaurants et de cafés avant de m’installer en France en 2022 pour mes études.</p>
+        <p>Depuis, j’ai travaillé sur des projets à Nantes, Luçon et Aix-en-Provence. Ce que j’aime le plus : partir d’une idée, la transformer en marque visible, puis mesurer ce qu’elle rapporte.</p>
+        <p>Je cherche une équipe où apprendre vite, et où mon expérience du terrain et ma double culture Europe – Asie peuvent servir dès la première semaine.</p>
+        <div class="values">
+          <div><b>Autonome</b><span>J’ai porté seul le lancement de Sushi 2 Go et ma propre entreprise.</span></div>
+          <div><b>Orienté résultats</b><span>Chaque action est suivie d’un chiffre : CA, abonnés, interactions.</span></div>
+          <div><b>Créatif</b><span>Je conçois moi-même les visuels, du post Instagram au roll-up.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="methode" data-tint="#D9B36C" style="padding-top:0">
+    <div class="wrap">
+      <div class="kicker" data-a="left"><span class="mono">Ma méthode</span></div>
+      <h2 class="big" data-a="title">Comprendre, créer, <span class="serif">mesurer.</span></h2>
+      <div class="method" data-a="up">
+        <div class="mstep"><span class="mono">01</span><h3>Comprendre</h3><p>Qui est le client, pourquoi il ne vient pas, ce qui le ferait revenir.</p><em>Hẻm 8 après le Covid</em></div>
+        <div class="mstep"><span class="mono">02</span><h3>Positionner</h3><p>Un angle clair et un nom qui le portent.</p><em>Sushi 2 Go</em></div>
+        <div class="mstep"><span class="mono">03</span><h3>Créer</h3><p>Une identité et des contenus reconnaissables au premier coup d’œil.</p><em>Série Fruit tea</em></div>
+        <div class="mstep"><span class="mono">04</span><h3>Lancer</h3><p>Réseaux sociaux, publicité ciblée, terrain et événements, ensemble.</p><em>Meta Ads + flyers</em></div>
+        <div class="mstep"><span class="mono">05</span><h3>Mesurer</h3><p>Suivre les chiffres et ajuster l’action suivante.</p><em>+50 % de CA</em></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="alternance" data-tint="#D9B36C" style="padding-top:0">
+    <div class="wrap">
+      <div class="plan" data-a="zoom">
+        <div>
+          <div class="kicker"><span class="mono">Ma recherche</span></div>
+          <h2 class="big" style="font-size:clamp(2.2rem,4.6vw,3.6rem)">Assistant marketing <span class="serif">en alternance</span></h2>
+          <div class="facts">
+            <div class="fact"><span>Contrat</span><span>Alternance · 12 mois</span></div>
+            <div class="fact"><span>Démarrage</span><span>Immédiat</span></div>
+            <div class="fact"><span>Rythme</span><span>En moyenne 1 semaine à l’école, 2 à 3 semaines en entreprise</span></div>
+            <div class="fact"><span>Été</span><span>100 % en entreprise en juillet et août</span></div>
+            <div class="fact"><span>École</span><span>Sup de Pub Paris · Master 2</span></div>
+            <div class="fact"><span>Lieu</span><span>Île-de-France en priorité</span></div>
+          </div>
+          <p class="now"><span class="dot" aria-hidden="true"></span>Je peux commencer dès cette semaine.</p>
+        </div>
+        <div class="plan-chart">
+          <p class="mono" style="margin-bottom:14px">Calendrier officiel Sup de Pub · nov. 2026 → oct. 2027 · jours par mois</p>
+          <div class="bars" data-a="bars" role="img" aria-label="Sur 12 mois : 189 jours en entreprise et 65 jours à l’école"><div class="bar" title="Nov : 15 jours en entreprise, 5 à l’école"><i class="ent" style="height:68.2%;--i:0"></i><i class="eco" style="height:22.7%;--i:0"></i></div><div class="bar" title="Déc : 17 jours en entreprise, 5 à l’école"><i class="ent" style="height:77.3%;--i:1"></i><i class="eco" style="height:22.7%;--i:1"></i></div><div class="bar" title="Janv : 10 jours en entreprise, 10 à l’école"><i class="ent" style="height:45.5%;--i:2"></i><i class="eco" style="height:45.5%;--i:2"></i></div><div class="bar" title="Févr : 15 jours en entreprise, 5 à l’école"><i class="ent" style="height:68.2%;--i:3"></i><i class="eco" style="height:22.7%;--i:3"></i></div><div class="bar" title="Mars : 15 jours en entreprise, 7 à l’école"><i class="ent" style="height:68.2%;--i:4"></i><i class="eco" style="height:31.8%;--i:4"></i></div><div class="bar" title="Avr : 15 jours en entreprise, 7 à l’école"><i class="ent" style="height:68.2%;--i:5"></i><i class="eco" style="height:31.8%;--i:5"></i></div><div class="bar" title="Mai : 14 jours en entreprise, 6 à l’école"><i class="ent" style="height:63.6%;--i:6"></i><i class="eco" style="height:27.3%;--i:6"></i></div><div class="bar" title="Juin : 13 jours en entreprise, 9 à l’école"><i class="ent" style="height:59.1%;--i:7"></i><i class="eco" style="height:40.9%;--i:7"></i></div><div class="bar" title="Juil : 21 jours en entreprise, 0 à l’école"><i class="ent" style="height:95.5%;--i:8"></i><i class="eco" style="height:0.0%;--i:8"></i></div><div class="bar" title="Août : 22 jours en entreprise, 0 à l’école"><i class="ent" style="height:100.0%;--i:9"></i><i class="eco" style="height:0.0%;--i:9"></i></div><div class="bar" title="Sept : 16 jours en entreprise, 6 à l’école"><i class="ent" style="height:72.7%;--i:10"></i><i class="eco" style="height:27.3%;--i:10"></i></div><div class="bar" title="Oct : 16 jours en entreprise, 5 à l’école"><i class="ent" style="height:72.7%;--i:11"></i><i class="eco" style="height:22.7%;--i:11"></i></div></div>
+          <div class="bar-l" aria-hidden="true"><span>Nov</span><span>Déc</span><span>Janv</span><span>Févr</span><span>Mars</span><span>Avr</span><span>Mai</span><span>Juin</span><span>Juil</span><span>Août</span><span>Sept</span><span>Oct</span></div>
+          <div class="legend"><span><i style="background:var(--gold)"></i>Entreprise</span><span><i style="background:var(--surface-2);border:1px solid var(--line)"></i>École</span></div>
+          <div class="plan-tot">
+            <div><b>189</b><span>jours en entreprise</span></div>
+            <div><b>65</b><span>jours à l’école</span></div>
+            <div><b>74 %</b><span>du temps dans votre équipe</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FREELANCE reel -->
+  <section class="reel" id="freelance" data-tint="#D9B36C" style="padding-block:0">
+    <div class="reel-pin">
+      <div class="wrap reel-head">
+        <div>
+          <div class="kicker"><span class="mono">Freelance · France &amp; Vietnam · depuis 2020</span></div>
+          <h2 class="big" style="font-size:clamp(2.4rem,6vw,4.6rem)">6 clients, <span class="serif">6 univers.</span></h2><p style="margin-top:12px"><a class="btn" href="freelance.html">Voir tous les projets freelance →</a></p>
+        </div>
+        <p class="reel-count"><b id="reel-n">01</b> / 06</p>
+      </div>
+      <div class="track-wrap"><div class="track"><article class="fcard"><a class="cover" href="freelance.html#vietway-sale" aria-label="Voir le projet Vietway : Comptoir de cuisine japonaise"><img src="img/fl-sa-3.webp" alt="Comptoir de cuisine japonaise" width="1100" height="990" loading="lazy" decoding="async"><span>12 visuels · voir le projet</span></a><p class="mono">Vietway · Foire de France</p><h3>Comptoir de cuisine japonaise</h3><p>Panneaux illustrés pour 9 spécialités et 3 roll-ups.</p></article><article class="fcard"><a class="cover" href="freelance.html#vietway-sucre" aria-label="Voir le projet Vietway : Comptoir Taiyaki &amp; Bubble Waffle"><img src="img/fl-sw-a1t.webp" alt="Comptoir Taiyaki &amp; Bubble Waffle" width="989" height="1400" loading="lazy" decoding="async"><span>6 visuels · voir le projet</span></a><p class="mono">Vietway · Foire de France</p><h3>Comptoir Taiyaki &amp; Bubble Waffle</h3><p>Affiches A1, roll-ups bilingues, bannières du comptoir.</p></article><article class="fcard"><a class="cover" href="freelance.html#leclerc" aria-label="Voir le projet Vietinnovation × E.Leclerc : Corner Sushi Bento"><img src="img/fl-lc-17.webp" alt="Corner Sushi Bento" width="990" height="1400" loading="lazy" decoding="async"><span>6 visuels · voir le projet</span></a><p class="mono">Vietinnovation × E.Leclerc · Luçon</p><h3>Corner Sushi Bento</h3><p>Affiches, flyer et bannières du corner sushi en supermarché.</p></article><article class="fcard"><a class="cover" href="freelance.html#aix" aria-label="Voir le projet Comptoir japonais : Menus « Japan Food Weekly »"><img src="img/fl-aix-1.webp" alt="Menus « Japan Food Weekly »" width="993" height="1400" loading="lazy" decoding="async"><span>3 visuels · voir le projet</span></a><p class="mono">Comptoir japonais · Aix-en-Provence</p><h3>Menus « Japan Food Weekly »</h3><p>Trois déclinaisons de menu pour un comptoir japonais.</p></article><article class="fcard"><a class="cover" href="freelance.html#komi" aria-label="Voir le projet Thé by KO-MI : Menus des boissons et des toppings"><img src="img/fl-komi-1.webp" alt="Menus des boissons et des toppings" width="989" height="1400" loading="lazy" decoding="async"><span>2 visuels · voir le projet</span></a><p class="mono">Thé by KO-MI · Salon de thé, France</p><h3>Menus des boissons et des toppings</h3><p>Menus des boissons et des toppings, doux et lisibles.</p></article><article class="fcard"><a class="cover" href="freelance.html#tarot" aria-label="Voir le projet La Clé Tarot &amp; Tiệm Hoa Lạ : Identités visuelles"><img src="img/fl-tarot-logo.webp" alt="Identités visuelles" width="1280" height="1024" loading="lazy" decoding="async"><span>8 visuels · voir le projet</span></a><p class="mono">La Clé Tarot &amp; Tiệm Hoa Lạ · Vietnam</p><h3>Identités visuelles</h3><p>Logo, menus, bon cadeau, et le logo d’une boutique de fleurs.</p></article></div></div>
+      <div class="wrap"><div class="reel-bar"><i></i></div></div>
+    </div>
+  </section>
+
+  <section id="parcours" data-tint="#D9B36C">
+    <div class="wrap">
+      <div class="kicker" data-a="left"><span class="mono">Parcours</span></div>
+      <h2 class="big" data-a="title">Du terrain <span class="serif">à la stratégie.</span></h2>
+      <div class="timeline">
+        <div class="job" data-a="up"><div class="when">Oct. 2024 – juin 2025</div><div><h3>Responsable Marketing</h3><p class="org">Vietinnovation · France</p><ul><li>Création de la marque Sushi 2 Go, du nom aux supports</li><li>Corner Sushi Bento chez E.Leclerc Luçon : affiches, PLV, menus</li><li>Gestion autonome de l’ensemble du pôle marketing</li></ul></div></div>
+        <div class="job" data-a="up"><div class="when">Depuis janv. 2020<br><span class="live"><span class="dot" aria-hidden="true"></span>En cours</span></div><div><h3>Freelance Marketing &amp; Design</h3><p class="org">France &amp; Vietnam</p><ul><li>Vietway (Foire de France), Thé by KO-MI, La Clé Tarot, Tiệm Hoa Lạ, comptoir à Aix-en-Provence…</li><li>Plus de 90 % de clients satisfaits</li></ul></div></div>
+        <div class="job" data-a="up"><div class="when">Févr. – août 2022</div><div><h3>Chef de service marketing</h3><p class="org">Fusio Corporation (Hẻm 8, Café Koem) · Vietnam</p><ul><li>Campagnes Facebook et Instagram Ads, print et actions terrain pour 4 établissements</li><li>+50 % de chiffre d’affaires en 2 mois pour Hẻm 8 Xa La</li></ul></div></div>
+        <div class="job" data-a="up"><div class="when">Juil. 2019 – juil. 2022</div><div><h3>Fondateur, créateur de marque</h3><p class="org">Duckee · @sneakerspahanoi · Vietnam</p><ul><li>Nettoyage premium de sneakers et de sacs</li><li>Branding complet, contenus et campagnes, 4 000+ abonnés Instagram</li></ul></div></div>
+        <div class="job" data-a="up"><div class="when">Nov. 2018 – oct. 2019</div><div><h3>Assistant Manager</h3><p class="org">Baskin Robbins · Hanoï</p><ul><li>Gestion du magasin et participation aux campagnes marketing</li><li>Distingué « Scooper 1★ » pour performance remarquable</li></ul></div></div>
+      </div>
+
+      <div class="edu">
+        <div class="edu-list" data-a="up">
+          <div class="edu-item now"><p class="mono">2026 – 2027</p><div><h4>Master 2 Marketing digital et E-commerce</h4><p>Sup de Pub · en alternance (1 semaine école / 2 semaines entreprise)</p></div></div>
+          <div class="edu-item"><p class="mono">2025 – 2026</p><div><h4>Master 1 Marketing digital</h4><p>ISMAC, école de commerce internationale France-Asie</p></div></div>
+          <div class="edu-item"><p class="mono">2024 – 2025</p><div><h4>Licence professionnelle Webdesign et Webmarketing</h4><p>Université Gustave Eiffel, Serris</p></div></div>
+          <div class="edu-item"><p class="mono">2022 – 2024</p><div><h4>Diplôme universitaire d’études de français</h4><p>Université de Reims Champagne-Ardenne · Université Rennes 2</p></div></div>
+          <div class="edu-item"><p class="mono">2018 – 2021</p><div><h4>Management du Tourisme et des Services de Loisirs</h4><p>Université de Commerce, Hanoï · Secrétaire général de l’association étudiante</p></div></div>
+        </div>
+        <div class="side-stack" data-a="up" style="--d:.12s">
+          <div class="mini"><p class="mono">Langues</p>
+            <div class="lang"><span>Français</span><span>Professionnel</span></div>
+            <div class="lang"><span>Anglais</span><span>Professionnel</span></div>
+            <div class="lang"><span>Vietnamien</span><span>Langue maternelle</span></div>
+          </div>
+          <div class="mini"><p class="mono">Outils</p><div class="chips"><span class="chip">Illustrator</span><span class="chip">Photoshop</span><span class="chip">InDesign</span><span class="chip">Premiere Pro</span><span class="chip">Canva</span><span class="chip">CapCut</span><span class="chip">Meta Ads</span><span class="chip">Google Ads</span><span class="chip">Google Analytics</span><span class="chip">SEO</span><span class="chip">Pack Office</span></div><p style="color:var(--muted);font-size:.86rem">Certification Adobe Illustrator, ColorME (2019)</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="faq" data-tint="#D9B36C" style="padding-top:0">
+    <div class="wrap">
+      <div class="kicker" data-a="left"><span class="mono">Questions fréquentes</span></div>
+      <h2 class="big" data-a="title">Vos questions, <span class="serif">mes réponses.</span></h2>
+      <div class="faq" data-a="up">
+        <details open><summary>Quand pouvez-vous commencer ?</summary><p><b>Immédiatement.</b> Le calendrier de Sup de Pub prévoit déjà des périodes en entreprise en novembre 2026 : je peux rejoindre votre équipe dès cette semaine.</p></details>
+        <details><summary>Quel est votre rythme d’alternance ?</summary><p>Un contrat de <b>12 mois</b>, avec en moyenne <b>1 semaine à l’école pour 2 à 3 semaines en entreprise</b>, et <b>100 % en entreprise en juillet et août</b>. Sur un an, cela représente environ 189 jours dans votre équipe pour 65 jours de cours.</p></details>
+        <details><summary>Quel est votre niveau de français ?</summary><p>J’ai le <b>DELF B2</b>. J’étudie et je travaille en français depuis 2022, à Reims, Rennes, Serris et Nantes.</p></details>
+        <details><summary>Où souhaitez-vous travailler ?</summary><p><b>En Île-de-France en priorité.</b> J’ai déjà travaillé sur des projets dans plusieurs villes de France (Nantes, Luçon, Aix-en-Provence) : les déplacements ponctuels ne me posent aucun problème.</p></details>
+        <details><summary>Pouvez-vous travailler en autonomie ?</summary><p>Oui. J’ai géré seul le pôle marketing de Vietinnovation jusqu’à l’ouverture de Sushi 2 Go, et j’ai dirigé ma propre entreprise pendant trois ans. Je sais aussi travailler en binôme : chez Fusio, nous étions deux au marketing.</p></details>
+        <details><summary>Quels outils maîtrisez-vous ?</summary><p>Illustrator, Photoshop, InDesign, Premiere Pro, Canva, CapCut pour la création ; Meta Ads, Google Ads et Google Analytics pour l’acquisition et le suivi ; le Pack Office au quotidien. Certification Adobe Illustrator (ColorME, 2019).</p></details>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact" data-tint="#D9B36C">
+    <div class="wrap">
+      <div class="kicker" data-a="left"><span class="mono">Contact</span></div>
+      <h2 class="contact-big" data-a="title">On se <span class="serif">rencontre ?</span></h2>
+      <div class="contact-grid">
+        <p class="lead" data-a="up">Je recherche une alternance d’assistant marketing de 12 mois, disponible immédiatement, au rythme d’une semaine à l’école pour deux à trois semaines en entreprise. Un échange de 15 minutes suffit pour voir ce que je peux apporter à votre équipe.</p>
+        <div class="rows" data-a="up" style="--d:.1s">
+          <div class="row"><div><p class="mono">E-mail</p><p class="v" id="v-mail">duckien.nguyen087@gmail.com</p></div><button class="copy" id="copy-mail" data-target="v-mail" type="button">Copier</button></div>
+          <div class="row"><div><p class="mono">Téléphone</p><p class="v" id="v-tel">+33 7 52 06 10 23</p></div><button class="copy" id="copy-tel" data-target="v-tel" type="button">Copier</button></div>
+          <div class="row"><div><p class="mono">LinkedIn</p><a class="v" href="https://www.linkedin.com/in/duc-kien-kevin-nguyen/" target="_blank" rel="noopener">duc-kien-kevin-nguyen ↗</a></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="wrap"><p class="mono">Duc Kien (Kevin) Nguyen · Portfolio 2026</p><p class="mono">Tell brands. Move people.</p></div></footer>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Visuel agrandi">
+  <div class="lb-top"><span class="mono" id="lb-n"></span><button type="button" class="lb-btn" id="lb-close">Fermer ✕</button></div>
+  <div class="lb-stage">
+    <img id="lb-img" alt="">
+    <button type="button" class="lb-nav prev" id="lb-prev" aria-label="Visuel précédent">←</button>
+    <button type="button" class="lb-nav next" id="lb-next" aria-label="Visuel suivant">→</button>
+  </div>
+  <p class="lb-cap" id="lb-cap"></p>
+</div>
+
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root=document.documentElement;
+
+  // split titles into words
+  document.querySelectorAll('[data-a="title"]').forEach(function(el){
+    var i=0;
+    (function walk(node){
+      [].slice.call(node.childNodes).forEach(function(n){
+        if(n.nodeType===3){
+          var f=document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function(w){
+            if(!w)return;
+            if(/^\s+$/.test(w)){f.appendChild(document.createTextNode(w));return}
+            var s=document.createElement('span');s.className='w';s.style.setProperty('--i',i++);s.textContent=w;f.appendChild(s);
+          });
+          n.parentNode.replaceChild(f,n);
+        } else if(n.nodeType===1) walk(n);
+      });
+    })(el);
+  });
+  document.querySelectorAll('[data-a="tiles"]').forEach(function(g){
+    [].slice.call(g.querySelectorAll('.tile')).forEach(function(t,i){t.style.setProperty('--i',i%6)});
+  });
+
+  // reveal: only elements below the first screen start hidden
+  if(!reduce && 'IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.remove('pending');io.unobserve(e.target)}
+    })},{rootMargin:'0px 0px -10% 0px',threshold:0.02});
+    document.querySelectorAll('[data-a]').forEach(function(el){
+      if(el.getBoundingClientRect().top>innerHeight*0.92){el.classList.add('pending');io.observe(el)}
+    });
+    // count-up
+    var cio=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(!e.isIntersecting)return;cio.unobserve(e.target);
+      var el=e.target,to=+el.dataset.count,sep=el.hasAttribute('data-sep'),t0=performance.now()+ (el.closest('.proof')&&performance.now()<2500?1400:0);
+      function fmt(n){return sep?String(n).replace(/\B(?=(\d{3})+(?!\d))/g,' '):String(n)}
+      (function f(t){var p=Math.max(0,Math.min(1,(t-t0)/1500));el.textContent=fmt(Math.round(to*(1-Math.pow(1-p,3))));if(p<1)requestAnimationFrame(f)})(performance.now());
+    })},{threshold:.5});
+    document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el)});
+  }
+
+  // chapter tint
+  var tio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)root.style.setProperty('--tint',e.target.dataset.tint)})},{rootMargin:'-45% 0px -45% 0px'});
+  document.querySelectorAll('[data-tint]').forEach(function(s){tio.observe(s)});
+
+  // gallery "voir plus"
+  document.querySelectorAll('.more button').forEach(function(b){b.addEventListener('click',function(){
+    var g=document.getElementById(b.dataset.gal);
+    g.querySelectorAll('.tile[hidden]').forEach(function(t){t.hidden=false});
+    b.parentNode.remove();
+  })});
+
+  // scroll: hero recede, progress, reel
+  var heroIn=document.querySelector('.hero-in'),reel=document.querySelector('.reel'),track=document.querySelector('.track'),
+      pin=document.querySelector('.reel-pin'),num=document.getElementById('reel-n'),cards=[].slice.call(document.querySelectorAll('.fcard')),reelOn=false;
+  function setupReel(){
+    reelOn=!reduce && innerHeight>=560;
+    reel.classList.toggle('static',!reelOn);
+    if(reelOn){var dist=Math.max(0,track.scrollWidth-innerWidth);reel.style.height=(innerHeight+dist)+'px';reel.dataset.dist=dist}
+    else{reel.style.height='';track.style.transform=''}
+  }
+  function onScroll(){
+    var y=scrollY,max=root.scrollHeight-innerHeight;
+    root.style.setProperty('--sp',max>0?y/max:0);
+    if(!reduce&&matchMedia('(min-width:901px) and (min-height:700px)').matches)heroIn.style.setProperty('--hp',Math.min(1,Math.max(0,y/(innerHeight*.9))).toFixed(3));
+    if(reelOn){
+      var r=reel.getBoundingClientRect(),dist=+reel.dataset.dist,p=Math.min(1,Math.max(0,-r.top/(dist||1)));
+      track.style.transform='translate3d('+(-p*dist)+'px,0,0)';pin.style.setProperty('--rp',p.toFixed(3));
+      var n=cards.length-1,idx=Math.min(n,Math.round(p*n));num.textContent=('0'+(idx+1)).slice(-2);
+      cards.forEach(function(c,i){var d=Math.min(1,Math.abs(i-p*n));c.style.transform='scale('+(1-d*.07)+') rotate('+((i-p*n)*1.2).toFixed(2)+'deg)';c.style.opacity=(1-d*.4).toFixed(2)});
+    }
+  }
+  var tk=false;
+  addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(function(){onScroll();tk=false})}},{passive:true});
+  addEventListener('resize',function(){setupReel();onScroll()});
+  addEventListener('load',function(){setupReel();onScroll()});
+  setupReel();onScroll();
+
+  // lightbox with groups
+  var lb=document.getElementById('lb'),li=document.getElementById('lb-img'),lc=document.getElementById('lb-cap'),ln=document.getElementById('lb-n'),set=[],cur=0,last=null;
+  function show(i){cur=(i+set.length)%set.length;var it=set[cur];li.src=it.src;li.alt=it.alt;lc.textContent=it.cap;ln.textContent=(cur+1)+' / '+set.length;
+    li.style.animation='none';void li.offsetWidth;li.style.animation='';}
+  function open(items,i,from){set=items;last=from;lb.hidden=false;root.style.overflow='hidden';show(i);document.getElementById('lb-close').focus()}
+  function close(){lb.hidden=true;root.style.overflow='';li.removeAttribute('src');if(last)last.focus()}
+  function fromTile(t){var im=t.querySelector('img');return{src:im.getAttribute('src'),alt:im.alt,cap:t.dataset.cap||im.alt}}
+  document.querySelectorAll('.tile').forEach(function(t){t.addEventListener('click',function(){
+    var box=t.closest('[data-set]');var tiles=[].slice.call(box.querySelectorAll('.tile'));
+    open(tiles.map(fromTile),tiles.indexOf(t),t);
+  })});
+  document.getElementById('lb-close').addEventListener('click',close);
+  document.getElementById('lb-prev').addEventListener('click',function(){show(cur-1)});
+  document.getElementById('lb-next').addEventListener('click',function(){show(cur+1)});
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target.classList.contains('lb-stage'))close()});
+  addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+  var sx=null;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1));sx=null});
+
+  // copy
+  document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.target),t=el.textContent.trim();
+    function done(){b.textContent='Copié ✓';setTimeout(function(){b.textContent='Copier'},1600)}
+    function fb(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Sélectionné'}
+    try{navigator.clipboard.writeText(t).then(done,fb)}catch(e){fb()}
+  })});
+})();
+</script>
+
+</body>
+</html>
